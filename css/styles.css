@@ -1,3 +1,8 @@
+body {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
 div img {
   margin: 0 auto;
   max-width: 150px; /* Opcional: defina uma largura máxima */
