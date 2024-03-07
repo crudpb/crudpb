@@ -18,6 +18,22 @@ div img {
   margin: 0 auto 30px;
 }
 
+.line1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-items: center;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 930px) {
   .grid-container {
     display: grid;
@@ -31,6 +47,11 @@ div img {
     max-width: 600px;
     margin: 0 auto 30px;
   }
+
+  .line1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -41,14 +62,9 @@ div img {
     max-width: 600px;
     margin: 0 auto 30px;
   }
-}
 
-article {
-  position: relative;
-}
-
-.article-img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+  .line1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 }
