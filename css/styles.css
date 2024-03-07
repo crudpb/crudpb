@@ -87,3 +87,40 @@ article {
 .redes-sociais a:hover {
   color: #777;
 }
+
+.mensagens-destaque {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  max-width: 960px;
+}
+
+.destaque-1,
+.destaque-2 {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.destaque-1 h2,
+.destaque-2 h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.destaque-1 a,
+.destaque-2 a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.destaque-1 a:hover,
+.destaque-2 a:hover {
+  background-color: #000;
+  color: #fff;
+}
