@@ -68,3 +68,22 @@ article {
     grid-column-end: 1;
   }
 }
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: auto;
+  justify-content: flex-end;
+}
+
+.redes-sociais a {
+  margin: 0 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.redes-sociais a:hover {
+  color: #777;
+}
