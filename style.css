@@ -1,9 +1,6 @@
 img {
   margin: 0 auto;
   max-width: 150px; /* Opcional: defina uma largura máxima */
-}
-
-div {
   display: flex;
   align-items: center;
 }
