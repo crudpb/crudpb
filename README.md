@@ -7,3 +7,4 @@ Referências:
 - [How do I use CloudFront to serve HTTPS requests for my Amazon S3 bucket?](https://repost.aws/knowledge-center/cloudfront-https-requests-s3)
 - [How to upload files on Amazon S3 using GitHubActions](https://medium.com/tradeling/how-to-upload-files-on-amazon-s3-using-githubactions-ffe1243331ed)
 - [Pushing Content to AWS S3 from Github Actions](https://www.timveletta.com/blog/pushing-content-to-s3-from-github-actions)
+- [Your website redirects work fine except for https://www.crudpb.org. This one times out instead of redirecting to https://crudpb.org like the others. How to fix?](./outros/Configurando_https_www_dominio.pdf)
