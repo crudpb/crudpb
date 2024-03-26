@@ -7,6 +7,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - id: jobs
+        uses: philips-labs/list-folders-action@v1
+        with:
+          path: ./
       - name: Upload to S3
         uses: shallwefootball/s3-upload-action@master
         id: S3
@@ -14,4 +18,4 @@ jobs:
           aws_key_id: ${{secrets.AWS_KEY_ID}}
           aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
           aws_bucket: crudpb.org
-          source_dir: /
+          source_dir: ./
