@@ -10,11 +10,20 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Upload to S3
-        uses: shallwefootball/s3-upload-action@master
-        id: S3
+      # - name: Upload to S3
+      #   uses: shallwefootball/s3-upload-action@master
+      #   id: S3
+      #   with:
+      #     aws_key_id: ${{secrets.AWS_KEY_ID}}
+      #     aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      #     aws_bucket: crudpb.org
+      #     source_dir: ${{ github.workspace }}
+      - name: Setup AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws_key_id: ${{secrets.AWS_KEY_ID}}
-          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: crudpb.org
-          source_dir: ${{ github.workspace }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+      - name: Sync files to S3 bucket
+        run: |
+          aws s3 sync build s3://crudpb.org --delete
