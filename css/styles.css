@@ -1,7 +1,7 @@
 body {
   max-width: 1680px;
   margin: 0 auto;
-  background-image: url("/image/bg.jpg");
+  background-image: url("./../image/bg.jpg");
 }
 
 .minimal-margin {
