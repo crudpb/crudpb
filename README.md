@@ -8,3 +8,5 @@ Referências:
 - [How to upload files on Amazon S3 using GitHubActions](https://medium.com/tradeling/how-to-upload-files-on-amazon-s3-using-githubactions-ffe1243331ed)
 - [Pushing Content to AWS S3 from Github Actions](https://www.timveletta.com/blog/pushing-content-to-s3-from-github-actions)
 - [Your website redirects work fine except for https://www.crudpb.org. This one times out instead of redirecting to https://crudpb.org like the others. How to fix?](./outros/Configurando_https_www_dominio.pdf)
+- [Mastering CI/CD: Deploying a React App to AWS S3 with GitHub Actions and Hosting It](https://medium.com/cloud-native-daily/mastering-ci-cd-deploying-a-react-js-app-to-aws-s3-with-github-actions-and-hosting-it-b1ce82360331)
+- [Solution for Amazon S3 Error “AccessControlListNotSupported”](https://aws.plainenglish.io/s3-error-accesscontrollistnotsupported-358cc5b27e15)
