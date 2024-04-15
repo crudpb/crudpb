@@ -1,15 +1,35 @@
 @font-face {
-  font-family: "League Spartan";
-  src: url("../font/LeagueSpartan-Regular.ttf") format("truetype");
+  font-family: "Montserrat";
+  src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sairra Condensad";
+  src: url("../font/SairaCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sairra Condensad Bold";
+  src: url("../font/SairaCondensed-Bold.ttf") format("truetype");
   font-weight: normal;
 }
 
 body {
   max-width: 1680px;
   margin: 0 auto;
-  background-color: #213f54;
+  background-color: #181917;
   color: white;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+  font-family: "Sairra Condensad", sans-serif;
+}
+
+header h1 b {
+  font-family: "Sairra Condensad Bold", sans-serif;
 }
 
 .minimal-margin {
@@ -35,7 +55,7 @@ div img {
   grid-template-columns: auto auto auto;
   grid-gap: 30px;
   max-width: 960px;
-  margin: 0 auto 30px;
+  margin: 0 auto 10px 10px;
 }
 
 .line1 {
@@ -65,7 +85,7 @@ article {
     grid-template-columns: auto auto;
     grid-gap: 30px;
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
   }
 
   .line1 {
@@ -80,7 +100,7 @@ article {
     grid-template-columns: auto;
     grid-gap: 30px;
     max-width: 600px;
-    margin: 0 auto 30px;
+    margin: 0 auto 10px;
   }
 
   .line1 {
