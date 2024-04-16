@@ -19,7 +19,13 @@
 body {
   max-width: 1680px;
   margin: 0 auto;
-  background-color: #181917;
+  background: rgb(131, 128, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 128, 80, 1) 0%,
+    rgba(75, 112, 54, 1) 35%,
+    rgba(24, 25, 23, 1) 100%
+  );
   color: white;
   font-family: "Montserrat", sans-serif;
 }
