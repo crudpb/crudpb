@@ -44,13 +44,6 @@ header h1 b {
   padding-left: 10px;
 }
 
-div img {
-  margin: 0 auto;
-  max-width: 150px; /* Opcional: defina uma largura máxima */
-  display: flex;
-  align-items: center;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -237,4 +230,36 @@ a:active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Reduced shadow */
   color: black;
   text-decoration: none;
+}
+
+.logo {
+  position: absolute; /* Change to fixed for always on screen */
+  left: 50%;
+  transform: translate(-50%, 0%); /* Center both vertically and horizontally */
+  z-index: 10; /* Ensure it's above other elements */
+  max-height: 100%;
+  max-width: 200px;
+}
+
+.carrossel {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content; /* Adjust container width to content */
+  transform: translateX(-50%); /* Center the container horizontally */
+  overflow-x: hidden; /* Hide overflowing images */
+}
+
+.carrossel img {
+  width: 370px;
+  display: inline-block;
+  margin-right: 10px; /* Add margin between images */
+  margin-left: 10px;
+}
+
+.carrossel img:first-child {
+  margin-left: auto;
+}
+
+.carrossel img:last-child {
+  margin-right: auto;
 }
