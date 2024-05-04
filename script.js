@@ -1,14 +1,8 @@
 // Clona as imagens para garantir uma transição contínua
 const carousel = document.querySelector(".carrossel");
-const images = carousel.querySelectorAll("img");
-
-images.forEach((image) => {
-  const clone = image.cloneNode(true);
-  carousel.appendChild(clone);
-});
 
 // Animação do carrossel
-let position = 0;
+let position = -150;
 
 function animateCarousel() {
   position -= 1; // Move uma unidade para a esquerda a cada intervalo
