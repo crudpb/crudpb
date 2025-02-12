@@ -1,0 +1,5 @@
+20250212
+--------------------------
+* Cratead lambda triggerCrudpbCloudFrontCache
+* On triggerCrudpbCloudFrontCache-role-8i4jsxjz created by the creation of the lambda, attached the inline policy AllowCrudpbCloudFrontDistributionInvalidationPolicy
+* Configure S3 event trigger, by creating event notification InvalidateCache and linking it to lambda
