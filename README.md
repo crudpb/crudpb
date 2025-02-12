@@ -28,3 +28,5 @@ Referências:
 - [Your website redirects work fine except for https://www.crudpb.org. This one times out instead of redirecting to https://crudpb.org like the others. How to fix?](./outros/Configurando_https_www_dominio.pdf)
 - [Mastering CI/CD: Deploying a React App to AWS S3 with GitHub Actions and Hosting It](https://medium.com/cloud-native-daily/mastering-ci-cd-deploying-a-react-js-app-to-aws-s3-with-github-actions-and-hosting-it-b1ce82360331)
 - [Solution for Amazon S3 Error “AccessControlListNotSupported”](https://aws.plainenglish.io/s3-error-accesscontrollistnotsupported-358cc5b27e15)
+- [Live Server VSCode Extention](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Automating CloudFront Cache Invalidation with Lambda: A CodePipeline and S3 Events approach](https://awstip.com/automating-cloudfront-cache-invalidation-with-lambda-a-codepipeline-and-s3-events-approach-df92efeea7dd)
