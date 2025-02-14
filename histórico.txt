@@ -1,3 +1,9 @@
+20250214
+--------------------------
+* Removemos o event notification do bucket, impedindo que a lambda  triggerCrudpbCloudFrontCache seja invocada
+* Atualizamos o github-actions.yaml para invocar a lambda triggerCrudpbCloudFrontCache
+* Criar policy inline permitindo usuário crudpb_s3_uploader invokar lambda triggerCrudpbCloudFrontCache
+
 20250212
 --------------------------
 * Cratead lambda triggerCrudpbCloudFrontCache
