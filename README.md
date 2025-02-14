@@ -30,3 +30,7 @@ Referências:
 - [Solution for Amazon S3 Error “AccessControlListNotSupported”](https://aws.plainenglish.io/s3-error-accesscontrollistnotsupported-358cc5b27e15)
 - [Live Server VSCode Extention](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Automating CloudFront Cache Invalidation with Lambda: A CodePipeline and S3 Events approach](https://awstip.com/automating-cloudfront-cache-invalidation-with-lambda-a-codepipeline-and-s3-events-approach-df92efeea7dd)
+- [Invoke AWS Lambda GHA](https://github.com/marketplace/actions/invoke-aws-lambda)
+- [GHA Store information in variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables)
+- [How to invalidate objects in with CloudFront using boto and python3?](https://stackoverflow.com/a/67603362)
+- [Using python Logging with AWS Lambda](https://stackoverflow.com/a/56878682)
