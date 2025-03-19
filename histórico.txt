@@ -1,3 +1,7 @@
+20250319
+--------------------------
+* Adicionando referëncia para o grupo #vagas (grupo 2)
+
 20250214
 --------------------------
 * Removemos o event notification do bucket, impedindo que a lambda  triggerCrudpbCloudFrontCache seja invocada
