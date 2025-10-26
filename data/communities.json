@@ -69,6 +69,14 @@
       "name": "English",
       "link": "https://bit.ly/english-speak-up-whatsapp-convite",
       "image": "./comunidades/english.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "AgileJampa",
+      "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
+      "image": "./comunidades/agilejampa.png",
+      "description": "Agilismo",
+      "longDescription": "Comunidade focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
     }
   ]
 }
