@@ -52,7 +52,7 @@ function newRendering(community, container) {
     customCard.className = 'custom-card';
     cardImageWrapper.className = 'card-image-wrapper';
 
-    cardLink.href = community.url || '#';
+    cardLink.href = community.link;
     cardLink.target = '_blank';
 
     cardImage.src = community.image;
