@@ -1,0 +1,74 @@
+{
+  "communities": [
+    {
+      "name": "PUG-PB",
+      "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
+      "image": "./comunidades/pugpb.jpg"
+    },
+    {
+      "name": "PHP-PB",
+      "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
+      "image": "./comunidades/phppb.jpg"
+    },
+    {
+      "name": "ParaíbaJS",
+      "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
+      "image": "./comunidades/paraibajs.jpg"
+    },
+    {
+      "name": "Paraí",
+      "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
+      "image": "./comunidades/parai.jpg"
+    },
+    {
+      "name": "JampaRuby",
+      "link": "https://chat.whatsapp.com/HJnL8s6gfCy0n9GzvR7X3t",
+      "image": "./comunidades/jampaRuby.jpg"
+    },
+    {
+      "name": "Hora Extra JP",
+      "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
+      "image": "./comunidades/horaextrajp.jpg"
+    },
+    {
+      "name": "Grude4J",
+      "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
+      "image": "./comunidades/grude4j.jpg"
+    },
+    {
+      "name": ".NET PB",
+      "link": "https://chat.whatsapp.com/HcPJA53n2ZY2HJMAFy3BDL",
+      "image": "./comunidades/dotnetpb.jpg"
+    },
+    {
+      "name": "Dev Internacional",
+      "link": "https://chat.whatsapp.com/KuT6hvlvIUnKorQMjqmazG",
+      "image": "./comunidades/devInternacional.jpg"
+    },
+    {
+      "name": "DevCloud PB",
+      "link": "https://chat.whatsapp.com/BCMEzXKMr8R19HRbagi1M9",
+      "image": "./comunidades/devcloudpb.jpg"
+    },
+    {
+      "name": "AP Games",
+      "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
+      "image": "./comunidades/apgames.jpg"
+    },
+    {
+      "name": "XR PB",
+      "link": "https://chat.whatsapp.com/HtXX6Doq6e9Dg6zqRj5jmO",
+      "image": "./comunidades/xrpb.jpg"
+    },
+    {
+      "name": "Dev Empreendedor",
+      "link": "https://bit.ly/comunidade-dev-startup",
+      "image": "./comunidades/devempreendedor.jpg"
+    },
+    {
+      "name": "English",
+      "link": "https://bit.ly/english-speak-up-whatsapp-convite",
+      "image": "./comunidades/english.jpg"
+    }
+  ]
+}
