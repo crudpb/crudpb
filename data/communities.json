@@ -37,9 +37,10 @@
     },
     {
       "newRenderMode": true,
-      "name": "Hora Extra JP",
+      "name": "#HoraExtraJP",
       "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
-      "image": "./comunidades/newRendering/horaextrajp.jpg"
+      "image": "./comunidades/newRendering/horaextrajp.jpg",
+      "description": "Happy hour das comunidades"
     },
     {
       "newRenderMode": true,
