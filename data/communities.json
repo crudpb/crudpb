@@ -8,9 +8,10 @@
       "description": "Python"
     },
     {
+      "newRenderMode": true,
       "name": "PHP-PB",
       "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
-      "image": "./comunidades/phppb.jpg"
+      "image": "./comunidades/newRedering/phppb.jpg"
     },
     {
       "name": "ParaíbaJS",
