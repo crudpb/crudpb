@@ -67,7 +67,7 @@
     {
       "newRenderMode": true,
       "name": "dev-cloud-PB",
-      "link": "https://chat.whatsapp.com/BCMEzXKMr8R19HRbagi1M9",
+      "link": "https://chat.whatsapp.com/BL6nlNJ5ccv4c73NlEaSUo?mode=wwt",
       "image": "./comunidades/newRendering/devcloudpb.jpg",
       "description": "Computação na nuvem"
     },
@@ -106,6 +106,35 @@
       "image": "./comunidades/newRendering/agilejampa.jpg",
       "description": "Agilidade",
       "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
+    },
+
+
+
+
+
+    {
+      "newRenderMode": true,
+      "name": "Golang PB",
+      "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
+      "image": "./comunidades/newRendering/golang.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Dados PB",
+      "link": "https://chat.whatsapp.com/F6ogttzFKtRIpTSh3zfPyc?mode=wwt",
+      "image": "./comunidades/newRendering/dadospb.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Zabbix",
+      "link": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa",
+      "image": "./comunidades/newRendering/zabbix.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Web3 / Blockchain",
+      "link": "https://chat.whatsapp.com/KFnHKtxRzND345CmUNk3Ks?mode=wwt",
+      "image": "./comunidades/newRendering/web3blockchain.jpg"
     }
   ]
 }
