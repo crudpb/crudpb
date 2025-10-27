@@ -51,19 +51,25 @@
       "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
     },
     {
+      "newRenderMode": true,
       "name": ".NET PB",
       "link": "https://chat.whatsapp.com/HcPJA53n2ZY2HJMAFy3BDL",
-      "image": "./comunidades/dotnetpb.jpg"
+      "image": "./comunidades/newRendering/dotnetpb.jpg",
+      "description": ".NET C#"
     },
     {
-      "name": "Dev Internacional",
+      "newRenderMode": true,
+      "name": "Dev-Internacional",
       "link": "https://chat.whatsapp.com/KuT6hvlvIUnKorQMjqmazG",
-      "image": "./comunidades/devInternacional.jpg"
+      "image": "./comunidades/newRendering/devInternacional.jpg",
+      "description": "Trabalhando para gringa"
     },
     {
-      "name": "DevCloud PB",
+      "newRenderMode": true,
+      "name": "dev-cloud-PB",
       "link": "https://chat.whatsapp.com/BCMEzXKMr8R19HRbagi1M9",
-      "image": "./comunidades/devcloudpb.jpg"
+      "image": "./comunidades/newRendering/devcloudpb.jpg",
+      "description": "Computação na nuvem"
     },
     {
       "name": "AP Games",
