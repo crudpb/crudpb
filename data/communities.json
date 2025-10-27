@@ -135,6 +135,12 @@
       "name": "Web3 / Blockchain",
       "link": "https://chat.whatsapp.com/KFnHKtxRzND345CmUNk3Ks?mode=wwt",
       "image": "./comunidades/newRendering/web3blockchain.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Coop",
+      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
+      "image": "./comunidades/newRendering/coop.jpg"
     }
   ]
 }
