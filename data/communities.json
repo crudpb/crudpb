@@ -72,24 +72,32 @@
       "description": "Computação na nuvem"
     },
     {
+      "newRenderMode": true,
       "name": "AP Games",
       "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
-      "image": "./comunidades/apgames.jpg"
+      "image": "./comunidades/newRendering/apgames.jpg",
+      "description": "Desenvolvedores de jogos"
     },
     {
+      "newRenderMode": true,
       "name": "XR PB",
       "link": "https://chat.whatsapp.com/HtXX6Doq6e9Dg6zqRj5jmO",
-      "image": "./comunidades/xrpb.jpg"
+      "image": "./comunidades/newRendering/xrpb.jpg",
+      "description": "VR/AR/MR"
     },
     {
+      "newRenderMode": true,
       "name": "Dev Empreendedor",
       "link": "https://bit.ly/comunidade-dev-startup",
-      "image": "./comunidades/devempreendedor.jpg"
+      "image": "./comunidades/newRendering/devstartup.jpg",
+      "description": "Dev empreendedor"
     },
     {
+      "newRenderMode": true,
       "name": "English",
       "link": "https://bit.ly/english-speak-up-whatsapp-convite",
-      "image": "./comunidades/english.jpg"
+      "image": "./comunidades/newRendering/englishSpeackup.jpg",
+      "description": "Venha falar inglês!"
     },
     {
       "newRenderMode": true,
