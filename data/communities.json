@@ -16,9 +16,12 @@
       "image": "./comunidades/paraibajs.jpg"
     },
     {
+      "newRenderMode": true,
       "name": "Paraí",
       "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
-      "image": "./comunidades/parai.jpg"
+      "image": "./comunidades/newRedering/parai.jpg",
+      "description": "Inteligência Artificial na Paraíba",
+      "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba."
     },
     {
       "name": "JampaRuby",
@@ -31,9 +34,12 @@
       "image": "./comunidades/horaextrajp.jpg"
     },
     {
+      "newRenderMode": true,
       "name": "Grude4J",
       "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
-      "image": "./comunidades/grude4j.jpg"
+      "image": "./comunidades/newRedering/grude4j.jpg",
+      "description": "Comunidade Java na Paraíba",
+      "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
     },
     {
       "name": ".NET PB",
@@ -74,7 +80,7 @@
       "newRenderMode": true,
       "name": "AgileJampa",
       "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
-      "image": "./comunidades/agilejampa.jpg",
+      "image": "./comunidades/newRedering/agilejampa.jpg",
       "description": "Agilidade",
       "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
     }
