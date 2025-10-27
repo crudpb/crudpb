@@ -4,45 +4,48 @@
       "newRenderMode": true,
       "name": "PUG-PB",
       "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
-      "image": "./comunidades/newRedering/pugpb.jpg",
+      "image": "./comunidades/newRendering/pugpb.jpg",
       "description": "Python"
     },
     {
       "newRenderMode": true,
       "name": "PHP-PB",
       "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
-      "image": "./comunidades/newRedering/phppb.jpg"
+      "image": "./comunidades/newRendering/phppb.jpg"
     },
     {
       "newRenderMode": true,
       "name": "ParaíbaJS",
       "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
-      "image": "./comunidades/newRedering/paraibajs.jpg",
+      "image": "./comunidades/newRendering/paraibajs.jpg",
       "description": "Javascript e seus frameworks"
     },
     {
       "newRenderMode": true,
       "name": "Paraí",
       "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
-      "image": "./comunidades/newRedering/parai.jpg",
+      "image": "./comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
       "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba."
     },
     {
+      "newRenderMode": true,
       "name": "JampaRuby",
       "link": "https://chat.whatsapp.com/HJnL8s6gfCy0n9GzvR7X3t",
-      "image": "./comunidades/jampaRuby.jpg"
+      "image": "./comunidades/newRendering/jampaRuby.jpg",
+      "description": "Linguagem Ruby"
     },
     {
+      "newRenderMode": true,
       "name": "Hora Extra JP",
       "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
-      "image": "./comunidades/horaextrajp.jpg"
+      "image": "./comunidades/newRendering/horaextrajp.jpg"
     },
     {
       "newRenderMode": true,
       "name": "Grude4J",
       "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
-      "image": "./comunidades/newRedering/grude4j.jpg",
+      "image": "./comunidades/newRendering/grude4j.jpg",
       "description": "Comunidade Java na Paraíba",
       "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
     },
@@ -85,7 +88,7 @@
       "newRenderMode": true,
       "name": "AgileJampa",
       "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
-      "image": "./comunidades/newRedering/agilejampa.jpg",
+      "image": "./comunidades/newRendering/agilejampa.jpg",
       "description": "Agilidade",
       "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
     }
