@@ -14,9 +14,11 @@
       "image": "./comunidades/newRedering/phppb.jpg"
     },
     {
+      "newRenderMode": true,
       "name": "ParaíbaJS",
       "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
-      "image": "./comunidades/paraibajs.jpg"
+      "image": "./comunidades/newRedering/paraibajs.jpg",
+      "description": "Javascript e seus frameworks"
     },
     {
       "newRenderMode": true,
