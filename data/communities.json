@@ -2,41 +2,6 @@
   "communities": [
     {
       "newRenderMode": true,
-      "name": "PUG-PB",
-      "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
-      "image": "./comunidades/newRendering/pugpb.jpg",
-      "description": "Python"
-    },
-    {
-      "newRenderMode": true,
-      "name": "PHP-PB",
-      "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
-      "image": "./comunidades/newRendering/phppb.jpg"
-    },
-    {
-      "newRenderMode": true,
-      "name": "ParaíbaJS",
-      "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
-      "image": "./comunidades/newRendering/paraibajs.jpg",
-      "description": "Javascript e seus frameworks"
-    },
-    {
-      "newRenderMode": true,
-      "name": "Paraí",
-      "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
-      "image": "./comunidades/newRendering/parai.jpg",
-      "description": "Inteligência Artificial na Paraíba",
-      "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba."
-    },
-    {
-      "newRenderMode": true,
-      "name": "JampaRuby",
-      "link": "https://chat.whatsapp.com/HJnL8s6gfCy0n9GzvR7X3t",
-      "image": "./comunidades/newRendering/jampaRuby.jpg",
-      "description": "Linguagem Ruby"
-    },
-    {
-      "newRenderMode": true,
       "name": "#HoraExtraJP",
       "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
       "image": "./comunidades/newRendering/hejp.jpg",
@@ -44,18 +9,44 @@
     },
     {
       "newRenderMode": true,
-      "name": "Grude4J",
-      "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
-      "image": "./comunidades/newRendering/grude4j.jpg",
-      "description": "Comunidade Java na Paraíba",
-      "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
-    },
-    {
-      "newRenderMode": true,
       "name": ".NET PB",
       "link": "https://chat.whatsapp.com/HcPJA53n2ZY2HJMAFy3BDL",
       "image": "./comunidades/newRendering/dotnetpb.jpg",
       "description": ".NET C#"
+    },
+    {
+      "newRenderMode": true,
+      "name": "AgileJampa",
+      "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
+      "image": "./comunidades/newRendering/agilejampa.jpg",
+      "description": "Agilidade",
+      "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
+    },
+    {
+      "newRenderMode": true,
+      "name": "AP Games",
+      "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
+      "image": "./comunidades/newRendering/apgames.jpg",
+      "description": "Desenvolvedores de jogos"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Coop",
+      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
+      "image": "./comunidades/newRendering/coop.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Dados PB",
+      "link": "https://chat.whatsapp.com/F6ogttzFKtRIpTSh3zfPyc?mode=wwt",
+      "image": "./comunidades/newRendering/dadospb.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Dev Empreendedor",
+      "link": "https://bit.ly/comunidade-dev-startup",
+      "image": "./comunidades/newRendering/devstartup.jpg",
+      "description": "Dev empreendedor"
     },
     {
       "newRenderMode": true,
@@ -73,10 +64,72 @@
     },
     {
       "newRenderMode": true,
-      "name": "AP Games",
-      "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
-      "image": "./comunidades/newRendering/apgames.jpg",
-      "description": "Desenvolvedores de jogos"
+      "name": "English",
+      "link": "https://bit.ly/english-speak-up-whatsapp-convite",
+      "image": "./comunidades/newRendering/englishSpeackup.jpg",
+      "description": "Venha falar inglês!"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Golang PB",
+      "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
+      "image": "./comunidades/newRendering/golang.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Grude4J",
+      "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
+      "image": "./comunidades/newRendering/grude4j.jpg",
+      "description": "Comunidade Java na Paraíba",
+      "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
+    },
+    {
+      "newRenderMode": true,
+      "name": "JampaRuby",
+      "link": "https://chat.whatsapp.com/HJnL8s6gfCy0n9GzvR7X3t",
+      "image": "./comunidades/newRendering/jampaRuby.jpg",
+      "description": "Linguagem Ruby"
+    },
+    {
+      "newRenderMode": true,
+      "name": "LINUX PB",
+      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
+      "image": "./comunidades/newRendering/linuxpb.jpg",
+      "longDescription": "Entusiastas de sistemas *NIX paraibanos."
+    },
+    {
+      "newRenderMode": true,
+      "name": "PHP-PB",
+      "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
+      "image": "./comunidades/newRendering/phppb.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "PUG-PB",
+      "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
+      "image": "./comunidades/newRendering/pugpb.jpg",
+      "description": "Python"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Paraí",
+      "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
+      "image": "./comunidades/newRendering/parai.jpg",
+      "description": "Inteligência Artificial na Paraíba",
+      "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba."
+    },
+    {
+      "newRenderMode": true,
+      "name": "ParaíbaJS",
+      "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
+      "image": "./comunidades/newRendering/paraibajs.jpg",
+      "description": "Javascript e seus frameworks"
+    },
+    {
+      "newRenderMode": true,
+      "name": "Web3 / Blockchain",
+      "link": "https://chat.whatsapp.com/KFnHKtxRzND345CmUNk3Ks?mode=wwt",
+      "image": "./comunidades/newRendering/web3blockchain.jpg"
     },
     {
       "newRenderMode": true,
@@ -87,67 +140,9 @@
     },
     {
       "newRenderMode": true,
-      "name": "Dev Empreendedor",
-      "link": "https://bit.ly/comunidade-dev-startup",
-      "image": "./comunidades/newRendering/devstartup.jpg",
-      "description": "Dev empreendedor"
-    },
-    {
-      "newRenderMode": true,
-      "name": "English",
-      "link": "https://bit.ly/english-speak-up-whatsapp-convite",
-      "image": "./comunidades/newRendering/englishSpeackup.jpg",
-      "description": "Venha falar inglês!"
-    },
-    {
-      "newRenderMode": true,
-      "name": "AgileJampa",
-      "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
-      "image": "./comunidades/newRendering/agilejampa.jpg",
-      "description": "Agilidade",
-      "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
-    },
-
-
-
-
-
-    {
-      "newRenderMode": true,
-      "name": "Golang PB",
-      "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
-      "image": "./comunidades/newRendering/golang.jpg"
-    },
-    {
-      "newRenderMode": true,
-      "name": "Dados PB",
-      "link": "https://chat.whatsapp.com/F6ogttzFKtRIpTSh3zfPyc?mode=wwt",
-      "image": "./comunidades/newRendering/dadospb.jpg"
-    },
-    {
-      "newRenderMode": true,
       "name": "Zabbix",
       "link": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa",
       "image": "./comunidades/newRendering/zabbix.jpg"
-    },
-    {
-      "newRenderMode": true,
-      "name": "Web3 / Blockchain",
-      "link": "https://chat.whatsapp.com/KFnHKtxRzND345CmUNk3Ks?mode=wwt",
-      "image": "./comunidades/newRendering/web3blockchain.jpg"
-    },
-    {
-      "newRenderMode": true,
-      "name": "Coop",
-      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
-      "image": "./comunidades/newRendering/coop.jpg"
-    },
-    {
-      "newRenderMode": true,
-      "name": "LINUX PB",
-      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
-      "image": "./comunidades/newRendering/linuxpb.jpg",
-      "longDescription": "Entusiastas de sistemas *NIX paraibanos."
     }
   ]
 }
