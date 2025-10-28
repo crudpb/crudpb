@@ -141,6 +141,13 @@
       "name": "Coop",
       "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
       "image": "./comunidades/newRendering/coop.jpg"
+    },
+    {
+      "newRenderMode": true,
+      "name": "LINUX PB",
+      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
+      "image": "./comunidades/newRendering/linuxpb.jpg",
+      "longDescription": "Entusiastas de sistemas *NIX paraibanos."
     }
   ]
 }
