@@ -275,27 +275,34 @@ a:active {
   max-width: 200px;
 }
 
-.carrossel {
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px; /* Altura do carrossel */
+}
+
+.carousel-track {
   display: flex;
-  flex-wrap: nowrap;
-  width: fit-content; /* Adjust container width to content */
-  transform: translateX(-50%); /* Center the container horizontally */
-  overflow-x: hidden; /* Hide overflowing images */
+  width: calc(370px * 16 + 20px * 16); /* (largura_imagem * num_imagens_total) + (gap * num_imagens_total) */
+  animation: scroll 60s linear infinite;
+  height: 100%;
 }
 
-.carrossel img {
-  width: 370px;
-  display: inline-block;
-  margin-right: 10px; /* Add margin between images */
-  margin-left: 10px;
-}
-
-.carrossel img:first-child {
-  margin-left: auto;
-}
-
-.carrossel img:last-child {
-  margin-right: auto;
+.carousel-track img {
+  height: 100%;
+  width: 370px; /* Largura fixa para cada imagem */
+  object-fit: cover;
+  margin: 0 10px; /* Espaçamento entre as imagens */
 }
 
 .custom-card {
