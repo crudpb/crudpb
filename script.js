@@ -1,16 +1,18 @@
 // Load communities data
 async function loadCommunities() {
+    const cacheBuster = 'v=20251028';
+
     try {
-        const response = await fetch('./data/communities.json');
+        const response = await fetch(`./data/communities.json?${cacheBuster}`);
         const data = await response.json();
         
         const container = document.querySelector('.cards');
         
         data.communities.forEach(community => {
             if (community.hasOwnProperty('newRenderMode') && community.newRenderMode) {
-                newRendering(community, container);
+                newRendering(community, container, cacheBuster);
             } else {
-                traditionalRendering(community, container);
+                traditionalRendering(community, container, cacheBuster);
             }
         });
     } catch (error) {
@@ -22,7 +24,7 @@ async function loadCommunities() {
 const carousel = document.querySelector(".carrossel");
 let position = -150;
 
-function traditionalRendering(community, container) {
+function traditionalRendering(community, container, cacheBuster) {
     const article = document.createElement('article');
     const link = document.createElement('a');
     const img = document.createElement('img');
@@ -30,7 +32,7 @@ function traditionalRendering(community, container) {
     link.href = community.link;
     link.target = '_blank';
     
-    img.src = community.image;
+    img.src = `${community.image}?${cacheBuster}`;
     img.alt = community.name;
     img.className = 'article-img';
     
@@ -40,7 +42,7 @@ function traditionalRendering(community, container) {
     container.appendChild(article);
 }
 
-function newRendering(community, container) {
+function newRendering(community, container, cacheBuster) {
     const customCard = document.createElement('div');
     const cardImageWrapper = document.createElement('div');
     const cardLink = document.createElement('a');
@@ -55,7 +57,7 @@ function newRendering(community, container) {
     cardLink.href = community.link;
     cardLink.target = '_blank';
 
-    cardImage.src = community.image;
+    cardImage.src = `${community.image}?${cacheBuster}`;
     cardImage.alt = community.name;
     cardImage.className = 'card-image';
 
