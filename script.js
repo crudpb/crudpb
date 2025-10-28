@@ -2,6 +2,7 @@
 async function loadCommunities() {
     try {
         const response = await fetch('./data/communities.json');
+        const response = await fetch('./data/communities.json?v=20251028');
         const data = await response.json();
         
         const container = document.querySelector('.cards');

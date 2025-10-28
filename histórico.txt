@@ -1,3 +1,8 @@
+20251028
+--------------------------
+* Resolvendo cache no browser do usuário final
+
+
 20251027
 --------------------------
 * Atualizando lista de comunidades
