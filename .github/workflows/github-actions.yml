@@ -19,6 +19,17 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Set Cache-Control for index.html
+        run: |
+          S3_BUCKET="${{ secrets.AWS_S3_BUCKET }}"
+          # O caminho para o index.html no seu repositório
+          INDEX_HTML_PATH="${{ github.workspace }}/index.html"
+
+          echo "Setting Cache-Control for index.html in s3://${S3_BUCKET}/"
+          aws s3 cp "${INDEX_HTML_PATH}" "s3://${S3_BUCKET}/index.html" \
+            --content-type "text/html" \
+            --cache-control "max-age=0, no-cache, must-revalidate" \
+            --acl public-read # É importante manter o ACL se o bucket não for público por padrão
       - name: Invoke triggerCrudpbCloudFrontCache Lambda
         uses: gagoar/invoke-aws-lambda@master
         with:
