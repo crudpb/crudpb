@@ -107,7 +107,7 @@ article {
   object-fit: cover;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1336px) {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
