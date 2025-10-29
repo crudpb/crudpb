@@ -4,17 +4,42 @@ async function loadCommunities() {
         const response = await fetch('./data/communities.json');
         const data = await response.json();
         
-        const container = document.querySelector('.cards');
+        const listaPrincipal = document.getElementById('listaPrincipal');
+        const listaAuxiliar = document.getElementById('listaAuxiliar');
+
+        processListaAuxiliarVisibility(data.communities);
         
         data.communities.forEach(community => {
             if (community.hasOwnProperty('newRenderMode') && community.newRenderMode) {
-                newRendering(community, container);
+                if (community.naoFazParteDoCrudpbAinda) {
+                    newRendering(community, listaAuxiliar);
+                } else {
+                    newRendering(community, listaPrincipal);
+                }
             } else {
                 traditionalRendering(community, container);
             }
         });
     } catch (error) {
         console.error('Error loading communities:', error);
+    }
+}
+
+function processListaAuxiliarVisibility(communities) {
+    let isVisible = false;
+    communities.every(community => {
+        if (community.naoFazParteDoCrudpbAinda) {
+            isVisible = true;
+            return false; // Stops the iteration
+        }
+        return true;
+    });
+
+    const myElement = document.getElementById('listaAuxiliar');
+    if (isVisible) {
+        myElement.style.display = 'block'; // Or 'flex', 'grid', 'inline-block', etc., depending on the element's default display type
+    } else {
+        myElement.style.display = 'none';
     }
 }
 
@@ -134,7 +159,7 @@ function newRendering(community, container) {
         clearTimeout(touchTimer);
     });
 
-    container.appendChild(customCard);
+        container.appendChild(customCard);
 }
 
 // Initialize everything when DOM is loaded

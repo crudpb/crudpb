@@ -143,6 +143,15 @@
       "name": "Zabbix",
       "link": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa",
       "image": "./comunidades/newRendering/zabbix.jpg"
+    },
+    {
+      "naoFazParteDoCrudpbAinda": true,
+      "newRenderMode": true,
+      "name": "WTM JP",
+      "link": "https://www.instagram.com/wtmjoaopessoa/",
+      "image": "./comunidades/newRendering/wtmjp.jpg",
+      "description": "Women Techmakers João Pessoa",
+      "longDescription": "Comunidade criada para integrar e apoiar mulheres de tecnologia de toda a Paraíba, promovendo eventos e trocando conhecimentos."
     }
   ]
 }
