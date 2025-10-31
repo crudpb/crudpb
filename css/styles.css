@@ -83,13 +83,21 @@ header h1 b {
   grid-template-columns: auto auto;
 }
 
+#lista {
+  min-width: 936px;
+}
+
+
 .cards {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-auto-rows: minmax(100px, 300px);
   grid-gap: 30px;
   max-width: 960px;
-  margin: 0 auto 10px 10px;
+  margin-top: 0;
+  margin-bottom: auto;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .line1 {
@@ -126,6 +134,10 @@ article {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  #lista {
+    min-width: unset;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -140,6 +152,10 @@ article {
   .line1 {
     grid-column-start: 1;
     grid-column-end: 1;
+  }
+
+  #lista {
+    min-width: unset;
   }
 }
 
@@ -315,7 +331,6 @@ a:active {
   flex-direction: column;
   align-items: center;
   padding: 32px 16px 24px 16px;
-  margin: 24px auto;
   /* Remove fixed height and overflow for flexible layout */
 }
 
@@ -378,4 +393,23 @@ a:active {
 .novo-membro-texto {
   color: black; 
   margin-bottom: 0;
+}
+
+.search-input {
+  display: block; /* Necessário para que a margem automática funcione */
+  width: 100%;
+  max-width: 300px; /* Largura máxima de 300px */
+  padding: 12px 15px;
+  margin: 20px auto; /* Centraliza horizontalmente com margens automáticas */
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-input::placeholder {
+  color: #888;
 }

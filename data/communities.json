@@ -141,7 +141,7 @@
       "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
       "image": "./comunidades/newRendering/paraibajs.jpg",
       "description": "Javascript e seus frameworks",
-      "keywords": ["javascript", "nodejs", "react", "vue", "angular"]
+      "keywords": ["javascript", "typescript", "nodejs", "react", "vue", "angular"]
     },
     {
       "newRenderMode": true,

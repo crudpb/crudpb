@@ -1,21 +1,47 @@
+let allCommunities = [];
+const listaPrincipal = document.getElementById('listaPrincipal');
+
 // Load communities data
 async function loadCommunities() {
     try {
         const response = await fetch('./data/communities.json');
         const data = await response.json();
-        
-        const listaPrincipal = document.getElementById('listaPrincipal');
-        
-        data.communities.forEach(community => {
-            if (community.hasOwnProperty('newRenderMode') && community.newRenderMode) {
-                newRendering(community, listaPrincipal);
-            } else {
-                traditionalRendering(community, container);
-            }
-        });
+        allCommunities = data.communities;
+        renderCommunities(allCommunities);
     } catch (error) {
         console.error('Error loading communities:', error);
     }
+}
+
+function renderCommunities(communities) {
+    listaPrincipal.innerHTML = ''; // Clear current list
+    communities.forEach(community => {
+        if (community.hasOwnProperty('newRenderMode') && community.newRenderMode) {
+            newRendering(community, listaPrincipal);
+        } else {
+            // Assuming 'container' is a valid fallback, though it's not defined in the original script scope
+            // For this implementation, we focus on newRendering as it's the primary mode.
+            traditionalRendering(community, listaPrincipal); 
+        }
+    });
+}
+
+function filterCommunities() {
+    const searchInput = document.getElementById('searchInput');
+    const searchTerm = searchInput.value.toLowerCase().trim();
+
+    if (searchTerm.length < 1) {
+        renderCommunities(allCommunities);
+        return;
+    }
+
+    const filtered = allCommunities.filter(community => {
+        const nameMatch = community.name.toLowerCase().includes(searchTerm);
+        const keywordsMatch = community.keywords && community.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm));
+        return nameMatch || keywordsMatch;
+    });
+
+    renderCommunities(filtered);
 }
 
 function traditionalRendering(community, container) {
@@ -140,4 +166,9 @@ function newRendering(community, container) {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     loadCommunities();
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', filterCommunities);
+    }
 });
