@@ -5,14 +5,16 @@
       "name": "#HoraExtraJP",
       "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
       "image": "./comunidades/newRendering/hejp.jpg",
-      "description": "Happy hour das comunidades"
+      "description": "Happy hour das comunidades",
+      "keywords": ["happy hour", "networking", "comunidades"]
     },
     {
       "newRenderMode": true,
       "name": ".NET PB",
       "link": "https://chat.whatsapp.com/HcPJA53n2ZY2HJMAFy3BDL",
       "image": "./comunidades/newRendering/dotnetpb.jpg",
-      "description": ".NET C#"
+      "description": ".NET C#",
+      "keywords": [".net", "c#", "asp.net"]
     },
     {
       "newRenderMode": true,
@@ -20,60 +22,69 @@
       "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
       "image": "./comunidades/newRendering/agilejampa.jpg",
       "description": "Agilidade",
-      "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software."
+      "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software.",
+      "keywords": ["agile", "scrum", "kanban", "lean" ]
     },
     {
       "newRenderMode": true,
       "name": "AP Games",
       "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
       "image": "./comunidades/newRendering/apgames.jpg",
-      "description": "Desenvolvedores de jogos"
+      "description": "Desenvolvedores de jogos",
+      "keywords": ["game development", "unity", "unreal engine"]
     },
     {
       "newRenderMode": true,
       "name": "Coop",
       "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
-      "image": "./comunidades/newRendering/coop.jpg"
+      "image": "./comunidades/newRendering/coop.jpg",
+      "keywords": ["coop", "colaboração", "trabalho em equipe", "cooperativa"]
     },
     {
       "newRenderMode": true,
       "name": "Dados PB",
       "link": "https://chat.whatsapp.com/F6ogttzFKtRIpTSh3zfPyc?mode=wwt",
-      "image": "./comunidades/newRendering/dadospb.jpg"
+      "image": "./comunidades/newRendering/dadospb.jpg",
+      "keywords": ["data science", "big data", "analytics"]
     },
     {
       "newRenderMode": true,
       "name": "Dev Empreendedor",
       "link": "https://bit.ly/comunidade-dev-startup",
       "image": "./comunidades/newRendering/devstartup.jpg",
-      "description": "Dev empreendedor"
+      "description": "Dev empreendedor",
+      "keywords": ["empreendedorismo", "startup", "negócios"]
     },
     {
       "newRenderMode": true,
       "name": "Dev-Internacional",
       "link": "https://chat.whatsapp.com/KuT6hvlvIUnKorQMjqmazG",
       "image": "./comunidades/newRendering/devinternacional.jpg",
-      "description": "Trabalhando para gringa"
+      "description": "Trabalhando para gringa",
+      "keywords": ["freelancer", "remoto", "internacional", "gringa", "exterior"]
     },
     {
       "newRenderMode": true,
       "name": "dev-cloud-PB",
       "link": "https://chat.whatsapp.com/BL6nlNJ5ccv4c73NlEaSUo?mode=wwt",
       "image": "./comunidades/newRendering/devcloudpb.jpg",
-      "description": "Computação na nuvem"
+      "description": "Computação na nuvem",
+      "keywords": ["cloud", "aws", "azure", "gcp"]
     },
     {
       "newRenderMode": true,
       "name": "English",
       "link": "https://bit.ly/english-speak-up-whatsapp-convite",
       "image": "./comunidades/newRendering/englishSpeackup.jpg",
-      "description": "Venha falar inglês!"
+      "description": "Venha falar inglês!",
+      "keywords": ["inglês", "conversação", "fluência", "gringa", "exterior"]
     },
     {
       "newRenderMode": true,
       "name": "Golang PB",
       "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
-      "image": "./comunidades/newRendering/golang.jpg"
+      "image": "./comunidades/newRendering/golang.jpg",
+      "keywords": ["golang", "go", "programação"]
     },
     {
       "newRenderMode": true,
@@ -81,34 +92,39 @@
       "link": "https://chat.whatsapp.com/DQX9T2rAsI8FBwdOOkuahD",
       "image": "./comunidades/newRendering/grude4j.jpg",
       "description": "Comunidade Java na Paraíba",
-      "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java."
+      "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java.",
+      "keywords": ["java", "spring", "microservices"]
     },
     {
       "newRenderMode": true,
       "name": "JampaRuby",
       "link": "https://chat.whatsapp.com/HJnL8s6gfCy0n9GzvR7X3t",
       "image": "./comunidades/newRendering/jampaRuby.jpg",
-      "description": "Linguagem Ruby"
+      "description": "Linguagem Ruby",
+      "keywords": ["ruby", "rails", "programação"]
     },
     {
       "newRenderMode": true,
       "name": "LINUX PB",
       "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
       "image": "./comunidades/newRendering/linuxpb.jpg",
-      "longDescription": "Entusiastas de sistemas *NIX paraibanos."
+      "longDescription": "Entusiastas de sistemas *NIX paraibanos.",
+      "keywords": ["linux", "unix", "sistemas operacionais"]
     },
     {
       "newRenderMode": true,
       "name": "PHP-PB",
       "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
-      "image": "./comunidades/newRendering/phppb.jpg"
+      "image": "./comunidades/newRendering/phppb.jpg",
+      "keywords": ["php", "laravel", "symfony"]
     },
     {
       "newRenderMode": true,
       "name": "PUG-PB",
       "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
       "image": "./comunidades/newRendering/pugpb.jpg",
-      "description": "Python"
+      "description": "Python",
+      "keywords": ["python", "data science", "machine learning"]
     },
     {
       "newRenderMode": true,
@@ -116,33 +132,38 @@
       "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
       "image": "./comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
-      "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba."
+      "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba.",
+      "keywords": ["inteligência artificial", "machine learning", "deep learning"]
     },
     {
       "newRenderMode": true,
       "name": "ParaíbaJS",
       "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
       "image": "./comunidades/newRendering/paraibajs.jpg",
-      "description": "Javascript e seus frameworks"
+      "description": "Javascript e seus frameworks",
+      "keywords": ["javascript", "nodejs", "react", "vue", "angular"]
     },
     {
       "newRenderMode": true,
       "name": "Web3 / Blockchain",
       "link": "https://chat.whatsapp.com/KFnHKtxRzND345CmUNk3Ks?mode=wwt",
-      "image": "./comunidades/newRendering/web3blockchain.jpg"
+      "image": "./comunidades/newRendering/web3blockchain.jpg",
+      "keywords": ["blockchain", "criptomoedas", "web3"]
     },
     {
       "newRenderMode": true,
       "name": "XR PB",
       "link": "https://chat.whatsapp.com/HtXX6Doq6e9Dg6zqRj5jmO",
       "image": "./comunidades/newRendering/xrpb.jpg",
-      "description": "VR/AR/MR"
+      "description": "VR/AR/MR",
+      "keywords": ["realidade virtual", "realidade aumentada", "realidade mista"]
     },
     {
       "newRenderMode": true,
       "name": "Zabbix",
       "link": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa",
-      "image": "./comunidades/newRendering/zabbix.jpg"
+      "image": "./comunidades/newRendering/zabbix.jpg",
+      "keywords": ["monitoramento", "zabbix"]
     },
     {
       "naoFazParteDoCrudpbAinda": true,
@@ -151,7 +172,8 @@
       "link": "https://www.instagram.com/wtmjoaopessoa/",
       "image": "./comunidades/newRendering/wtmjp.jpg",
       "description": "Women Techmakers João Pessoa",
-      "longDescription": "Comunidade criada para integrar e apoiar mulheres de tecnologia de toda a Paraíba, promovendo eventos e trocando conhecimentos."
+      "longDescription": "Comunidade criada para integrar e apoiar mulheres de tecnologia de toda a Paraíba, promovendo eventos e trocando conhecimentos.",
+      "keywords": ["mulheres", "diversidade", "inclusão"]
     }
   ]
 }
