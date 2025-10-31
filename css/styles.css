@@ -86,6 +86,7 @@ header h1 b {
 .cards {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-auto-rows: minmax(100px, 300px);
   grid-gap: 30px;
   max-width: 960px;
   margin: 0 auto 10px 10px;
