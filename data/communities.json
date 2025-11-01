@@ -6,7 +6,7 @@
       "link": "https://chat.whatsapp.com/LQFj72HAsyYEL5awsbnDR9",
       "image": "./comunidades/newRendering/hejp.jpg",
       "description": "Happy hour das comunidades",
-      "keywords": ["happy hour", "networking", "comunidades"]
+      "keywords": ["happy hour", "networking", "comunidades", "festa", "bar", "diversão"]
     },
     {
       "newRenderMode": true,
@@ -14,7 +14,7 @@
       "link": "https://chat.whatsapp.com/HcPJA53n2ZY2HJMAFy3BDL",
       "image": "./comunidades/newRendering/dotnetpb.jpg",
       "description": ".NET C#",
-      "keywords": [".net", "c#", "asp.net"]
+      "keywords": [".net", "c#", "asp.net", "microsoft", "ms", "azure", "dotnet"]
     },
     {
       "newRenderMode": true,
@@ -23,7 +23,7 @@
       "image": "./comunidades/newRendering/agilejampa.jpg",
       "description": "Agilidade",
       "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software.",
-      "keywords": ["agile", "scrum", "kanban", "lean" ]
+      "keywords": ["agile", "scrum", "kanban", "lean", "equipe", "gestão", "agil", "ágil"]
     },
     {
       "newRenderMode": true,
@@ -31,21 +31,21 @@
       "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
       "image": "./comunidades/newRendering/apgames.jpg",
       "description": "Desenvolvedores de jogos",
-      "keywords": ["game development", "unity", "unreal engine"]
+      "keywords": ["game development", "unity", "unreal engine", "jogos", "games"]
     },
     {
       "newRenderMode": true,
       "name": "Coop",
       "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
       "image": "./comunidades/newRendering/coop.jpg",
-      "keywords": ["coop", "colaboração", "trabalho em equipe", "cooperativa"]
+      "keywords": ["coop", "colaboração", "trabalho em equipe", "cooperativa", "gestão", "empreendedorismo", "negócios"]
     },
     {
       "newRenderMode": true,
       "name": "Dados PB",
       "link": "https://chat.whatsapp.com/F6ogttzFKtRIpTSh3zfPyc?mode=wwt",
       "image": "./comunidades/newRendering/dadospb.jpg",
-      "keywords": ["data science", "big data", "analytics"]
+      "keywords": ["data science", "big data", "analytics", "dados", "dashboards"]
     },
     {
       "newRenderMode": true,
@@ -53,7 +53,7 @@
       "link": "https://bit.ly/comunidade-dev-startup",
       "image": "./comunidades/newRendering/devstartup.jpg",
       "description": "Dev empreendedor",
-      "keywords": ["empreendedorismo", "startup", "negócios"]
+      "keywords": ["empreendedorismo", "startup", "negócios", "networking"]
     },
     {
       "newRenderMode": true,
@@ -61,7 +61,7 @@
       "link": "https://chat.whatsapp.com/KuT6hvlvIUnKorQMjqmazG",
       "image": "./comunidades/newRendering/devinternacional.jpg",
       "description": "Trabalhando para gringa",
-      "keywords": ["freelancer", "remoto", "internacional", "gringa", "exterior"]
+      "keywords": ["freelancer", "remoto", "internacional", "gringa", "exterior", "inglês", "dolar"]
     },
     {
       "newRenderMode": true,
@@ -69,7 +69,7 @@
       "link": "https://chat.whatsapp.com/BL6nlNJ5ccv4c73NlEaSUo?mode=wwt",
       "image": "./comunidades/newRendering/devcloudpb.jpg",
       "description": "Computação na nuvem",
-      "keywords": ["cloud", "aws", "azure", "gcp"]
+      "keywords": ["cloud", "aws", "azure", "gcp", "devops", "infraestrutura", "escalabilidade"]
     },
     {
       "newRenderMode": true,
@@ -84,7 +84,7 @@
       "name": "Golang PB",
       "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
       "image": "./comunidades/newRendering/golang.jpg",
-      "keywords": ["golang", "go", "programação"]
+      "keywords": ["golang", "go", "programação", "google", "nuvem", "cloud"]
     },
     {
       "newRenderMode": true,
@@ -93,7 +93,7 @@
       "image": "./comunidades/newRendering/grude4j.jpg",
       "description": "Comunidade Java na Paraíba",
       "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java.",
-      "keywords": ["java", "spring", "microservices"]
+      "keywords": ["java", "spring", "microservices", "ejob", "jakartaee", "spring boot"]
     },
     {
       "newRenderMode": true,
@@ -133,7 +133,7 @@
       "image": "./comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
       "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba.",
-      "keywords": ["inteligência artificial", "machine learning", "deep learning"]
+      "keywords": ["parai", "inteligência artificial", "machine learning", "deep learning"]
     },
     {
       "newRenderMode": true,
@@ -141,7 +141,7 @@
       "link": "https://chat.whatsapp.com/KDC8SG7uw0JJ1hfgLVXVTy",
       "image": "./comunidades/newRendering/paraibajs.jpg",
       "description": "Javascript e seus frameworks",
-      "keywords": ["javascript", "typescript", "nodejs", "react", "vue", "angular"]
+      "keywords": ["js", "javascript", "typescript", "nodejs", "react", "vue", "angular"]
     },
     {
       "newRenderMode": true,
@@ -156,7 +156,7 @@
       "link": "https://chat.whatsapp.com/HtXX6Doq6e9Dg6zqRj5jmO",
       "image": "./comunidades/newRendering/xrpb.jpg",
       "description": "VR/AR/MR",
-      "keywords": ["realidade virtual", "realidade aumentada", "realidade mista"]
+      "keywords": ["realidade virtual", "realidade aumentada", "realidade mista", "vr", "ar", "mr"]
     },
     {
       "newRenderMode": true,
