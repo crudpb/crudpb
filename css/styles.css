@@ -413,3 +413,27 @@ a:active {
 .search-input::placeholder {
   color: #888;
 }
+
+/* Estilos para a lista de grupos importantes */
+#grupos_importantes {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.grupo-importante-item {
+  display: flex;
+  align-items: center;
+}
+
+#textoSemDecoracao {
+  text-decoration: none;
+}
+
+.grupo-importante-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #f0f0f0;
+}
