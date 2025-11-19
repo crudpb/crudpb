@@ -74,8 +74,6 @@ function newRendering(community, container) {
     customCard.className = 'custom-card';
     cardImageWrapper.className = 'card-image-wrapper';
 
-    cardLink.href = community.link;
-    cardLink.target = '_blank';
 
     cardImage.src = community.image;
     cardImage.alt = community.name;
@@ -95,12 +93,51 @@ function newRendering(community, container) {
 
     customCard.appendChild(cardImageWrapper);
 
-    cardImageWrapper.appendChild(cardLink);
-    cardLink.appendChild(cardImage);
+    cardImageWrapper.appendChild(cardImage);
 
     customCard.appendChild(cardText);
     customCard.appendChild(cardTextFull);
     customCard.appendChild(tooltip);
+
+    // --- Social Icons ---
+    const socialIconsContainer = document.createElement('div');
+    socialIconsContainer.className = 'card-social-icons';
+
+    let hasSocialLinks = false;
+
+    // WhatsApp Icon (using 'link' property)
+    if (community.link) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.link;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-whatsapp whatsapp-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    // Instagram Icon
+    if (community.instagram) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.instagram;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-instagram instagram-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    // Website Icon
+    if (community.website) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.website;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-globe website-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    if (hasSocialLinks) {
+        customCard.appendChild(socialIconsContainer);
+    }
 
     // --- Tooltip positioning logic ---
     // Desktop: show tooltip near mouse

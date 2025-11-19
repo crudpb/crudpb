@@ -13,6 +13,38 @@
       src="https://kit.fontawesome.com/4cf7d8e589.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .card-social-icons {
+        text-align: center;
+        padding-top: 8px;
+      }
+      .card-social-icons a {
+        margin: 0 8px;
+        font-size: 1.2rem;
+        transition: transform 0.2s;
+        display: inline-block; /* Necessário para a transição de hover */
+      }
+      .card-social-icons a:hover {
+        transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+      }
+
+      /* Cores específicas para cada ícone */
+      .whatsapp-icon {
+        color: #25D366;
+      }
+      .instagram-icon {
+        /* Gradiente de cores do Instagram */
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #E4405F; /* Fallback para navegadores sem suporte */
+      }
+      .website-icon {
+        color: #4A90E2; /* Um azul para representar um link web genérico */
+      }
+
+    </style>
   </head>
   <body>
     <div class="minimal-margin">

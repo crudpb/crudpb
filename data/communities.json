@@ -93,7 +93,9 @@
       "image": "./image/comunidades/newRendering/grude4j.jpg",
       "description": "Comunidade Java na Paraíba",
       "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java.",
-      "keywords": ["java", "spring", "microservices", "ejob", "jakartaee", "spring boot"]
+      "keywords": ["java", "spring", "microservices", "ejob", "jakartaee", "spring boot"],
+      "instagram": "https://www.instagram.com/grude4joficial/",
+      "website": "https://grude4j.github.io/grude4jsite/index.html"
     },
     {
       "newRenderMode": true,
@@ -169,11 +171,12 @@
       "naoFazParteDoCrudpbAinda": true,
       "newRenderMode": true,
       "name": "WTM JP",
-      "link": "https://www.instagram.com/wtmjoaopessoa/",
+      "link": "",
       "image": "./image/comunidades/newRendering/wtmjp.jpg",
       "description": "Women Techmakers João Pessoa",
       "longDescription": "Comunidade criada para integrar e apoiar mulheres de tecnologia de toda a Paraíba, promovendo eventos e trocando conhecimentos.",
-      "keywords": ["mulheres", "diversidade", "inclusão"]
+      "keywords": ["mulheres", "diversidade", "inclusão"],
+      "instagram": "https://www.instagram.com/wtmjoaopessoa/"
     }
   ]
 }
