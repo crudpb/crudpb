@@ -3,181 +3,186 @@
     {
       "newRenderMode": true,
       "name": "#HoraExtraJP",
-      "link": "https://chat.whatsapp.com/FoCUZLmLLGMHU6SUU6d4fW",
       "image": "./image/comunidades/newRendering/hejp.jpg",
       "description": "Happy hour das comunidades",
-      "keywords": ["happy hour", "networking", "comunidades", "festa", "bar", "diversão"]
+      "keywords": ["happy hour", "networking", "comunidades", "festa", "bar", "diversão"],
+      "whatsapp": "https://chat.whatsapp.com/FoCUZLmLLGMHU6SUU6d4fW"
     },
     {
       "newRenderMode": true,
       "name": ".NET PB",
-      "link": "https://chat.whatsapp.com/EjOY3IlBECL4VI8683PkNK",
       "image": "./image/comunidades/newRendering/dotnetpb.jpg",
       "description": ".NET C#",
-      "keywords": [".net", "c#", "asp.net", "microsoft", "ms", "azure", "dotnet"]
+      "keywords": [".net", "c#", "asp.net", "microsoft", "ms", "azure", "dotnet"],
+      "whatsapp": "https://chat.whatsapp.com/EjOY3IlBECL4VI8683PkNK"
     },
     {
       "newRenderMode": true,
       "name": "AgileJampa",
-      "link": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt",
       "image": "./image/comunidades/newRendering/agilejampa.jpg",
       "description": "Agilidade",
       "longDescription": "Comunidade da Paraíba focada em metodologias ágeis, práticas de gestão e desenvolvimento ágil de software.",
-      "keywords": ["agile", "scrum", "kanban", "lean", "equipe", "gestão", "agil", "ágil"]
+      "keywords": ["agile", "scrum", "kanban", "lean", "equipe", "gestão", "agil", "ágil"],
+      "whatsapp": "https://chat.whatsapp.com/EjFRc3tvaCN8AUwVhqEMqs?mode=wwt"
     },
     {
       "newRenderMode": true,
       "name": "AP Games",
-      "link": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891",
       "image": "./image/comunidades/newRendering/apgames.jpg",
       "description": "Desenvolvedores de jogos",
-      "keywords": ["game development", "unity", "unreal engine", "jogos", "games"]
+      "keywords": ["game development", "unity", "unreal engine", "jogos", "games"],
+      "whatsapp": "https://chat.whatsapp.com/DsEpRP516RiAq2ogckw891"
     },
     {
       "newRenderMode": true,
       "name": "Coop",
-      "link": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt",
       "image": "./image/comunidades/newRendering/coop.jpg",
-      "keywords": ["coop", "colaboração", "trabalho em equipe", "cooperativa", "gestão", "empreendedorismo", "negócios"]
+      "keywords": ["coop", "colaboração", "trabalho em equipe", "cooperativa", "gestão", "empreendedorismo", "negócios"],
+      "whatsapp": "https://chat.whatsapp.com/JaSh3gP4zhF353DLjOVHrk?mode=wwt"
     },
     {
       "newRenderMode": true,
       "name": "Dados PB",
-      "link": "https://chat.whatsapp.com/EgGVnrHWKueFWZOsesXlAu",
       "image": "./image/comunidades/newRendering/dadospb.jpg",
-      "keywords": ["data science", "big data", "analytics", "dados", "dashboards"]
+      "keywords": ["data science", "big data", "analytics", "dados", "dashboards"],
+      "whatsapp": "https://chat.whatsapp.com/EgGVnrHWKueFWZOsesXlAu"
     },
     {
       "newRenderMode": true,
       "name": "Dev Empreendedor",
-      "link": "https://chat.whatsapp.com/BSGrHnlwBXj3gGSuDzVUVD",
       "image": "./image/comunidades/newRendering/devstartup.jpg",
       "description": "Dev empreendedor",
-      "keywords": ["empreendedorismo", "startup", "negócios", "networking"]
+      "keywords": ["empreendedorismo", "startup", "negócios", "networking"],
+      "whatsapp": "https://chat.whatsapp.com/BSGrHnlwBXj3gGSuDzVUVD"
     },
     {
       "newRenderMode": true,
       "name": "Dev-Internacional",
-      "link": "https://chat.whatsapp.com/JoYLaZcW7Ev7oBNDAk2lbM",
       "image": "./image/comunidades/newRendering/devinternacional.jpg",
       "description": "Trabalhando para gringa",
-      "keywords": ["freelancer", "remoto", "internacional", "gringa", "exterior", "inglês", "dolar"]
+      "keywords": ["freelancer", "remoto", "internacional", "gringa", "exterior", "inglês", "dolar"],
+      "whatsapp": "https://chat.whatsapp.com/JoYLaZcW7Ev7oBNDAk2lbM",
+      "youtube": "https://www.youtube.com/@dev-internacional7096"
     },
     {
       "newRenderMode": true,
       "name": "dev-cloud-PB",
-      "link": "https://chat.whatsapp.com/E8usPf4pGKUJsfPsUCwfRu",
       "image": "./image/comunidades/newRendering/devcloudpb.jpg",
       "description": "Computação na nuvem",
-      "keywords": ["cloud", "aws", "azure", "gcp", "devops", "infraestrutura", "escalabilidade"]
+      "keywords": ["cloud", "aws", "azure", "gcp", "devops", "infraestrutura", "escalabilidade"],
+      "whatsapp": "https://chat.whatsapp.com/E8usPf4pGKUJsfPsUCwfRu"
     },
     {
       "newRenderMode": true,
       "name": "English",
-      "link": "https://chat.whatsapp.com/ChCk2bMH0SbIuIJSjjNvUc",
       "image": "./image/comunidades/newRendering/englishSpeackup.jpg",
       "description": "Venha falar inglês!",
-      "keywords": ["inglês", "conversação", "fluência", "gringa", "exterior"]
+      "keywords": ["inglês", "conversação", "fluência", "gringa", "exterior"],
+      "whatsapp": "https://chat.whatsapp.com/ChCk2bMH0SbIuIJSjjNvUc",
+      "website": "https://english-speak-up.github.io/english-speak-up/"
     },
     {
       "newRenderMode": true,
       "name": "Golang PB",
-      "link": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt",
       "image": "./image/comunidades/newRendering/golang.jpg",
-      "keywords": ["golang", "go", "programação", "google", "nuvem", "cloud"]
+      "keywords": ["golang", "go", "programação", "google", "nuvem", "cloud"],
+      "whatsapp": "https://chat.whatsapp.com/GzAoX9Y1FYt08Xwu86xq38?mode=wwt"
     },
     {
       "newRenderMode": true,
       "name": "Grude4J",
-      "link": "https://chat.whatsapp.com/JCorCGkxxPzABBEwQGlen1",
       "image": "./image/comunidades/newRendering/grude4j.jpg",
       "description": "Comunidade Java na Paraíba",
       "longDescription": "Grude4J é uma comunidade de pessoas que compartilham a grande afinidade de trabalhar de algum jeito com a tecnologia Java.",
       "keywords": ["java", "spring", "microservices", "ejob", "jakartaee", "spring boot"],
+      "whatsapp": "https://chat.whatsapp.com/JCorCGkxxPzABBEwQGlen1",
       "instagram": "https://www.instagram.com/grude4joficial/",
       "website": "https://grude4j.github.io/grude4jsite/index.html"
     },
     {
       "newRenderMode": true,
       "name": "JampaRuby",
-      "link": "https://chat.whatsapp.com/EvIZ1wO7vgDB3aCFbEArn9",
       "image": "./image/comunidades/newRendering/jampaRuby.jpg",
       "description": "Linguagem Ruby",
-      "keywords": ["ruby", "rails", "programação"]
+      "keywords": ["ruby", "rails", "programação"],
+      "whatsapp": "https://chat.whatsapp.com/EvIZ1wO7vgDB3aCFbEArn9"
     },
     {
       "newRenderMode": true,
       "name": "LINUX PB",
-      "link": "https://chat.whatsapp.com/EQV4jm69bdV4qdFJEmydn7",
       "image": "./image/comunidades/newRendering/linuxpb.jpg",
       "longDescription": "Entusiastas de sistemas *NIX paraibanos.",
-      "keywords": ["linux", "unix", "sistemas operacionais"]
+      "keywords": ["linux", "unix", "sistemas operacionais"],
+      "whatsapp": "https://chat.whatsapp.com/EQV4jm69bdV4qdFJEmydn7"
     },
     {
       "newRenderMode": true,
       "name": "PHP-PB",
-      "link": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB",
       "image": "./image/comunidades/newRendering/phppb.jpg",
-      "keywords": ["php", "laravel", "symfony"]
+      "keywords": ["php", "laravel", "symfony"],
+      "whatsapp": "https://chat.whatsapp.com/JaWCta8t2DF9Af0zgIb8LB"
     },
     {
       "newRenderMode": true,
       "name": "PUG-PB",
-      "link": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox",
       "image": "./image/comunidades/newRendering/pugpb.jpg",
       "description": "Python",
-      "keywords": ["python", "data science", "machine learning"]
+      "keywords": ["python", "data science", "machine learning"],
+      "whatsapp": "https://chat.whatsapp.com/DyOrVEPWGaU6Tdu7Wy7eox"
     },
     {
       "newRenderMode": true,
       "name": "Paraí",
-      "link": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
       "image": "./image/comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
       "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba.",
       "keywords": ["parai", "inteligência artificial", "machine learning", "deep learning"],
+      "whatsapp": "https://chat.whatsapp.com/Hji1HxS9dixCDwYvCWxLYr",
       "instagram": "https://www.instagram.com/comunidade.parai/",
-      "website": "https://comunidadeparai.github.io/parai/"
+      "website": "https://comunidadeparai.github.io/parai/",
+      "linkedin": "https://www.linkedin.com/company/para%C3%AD-comunidade-t%C3%A9cnica-de-ia-da-para%C3%ADba/",
+      "youtube": "https://www.youtube.com/@comunidadeparai",
+      "github": "https://github.com/comunidadeparai"
     },
     {
       "newRenderMode": true,
       "name": "ParaíbaJS",
-      "link": "https://chat.whatsapp.com/BpxDP6Ndk8kIJeGwCL2mgZ",
       "image": "./image/comunidades/newRendering/paraibajs.jpg",
       "description": "Javascript e seus frameworks",
-      "keywords": ["js", "javascript", "typescript", "nodejs", "react", "vue", "angular"]
+      "keywords": ["js", "javascript", "typescript", "nodejs", "react", "vue", "angular"],
+      "whatsapp": "https://chat.whatsapp.com/BpxDP6Ndk8kIJeGwCL2mgZ"
     },
     {
       "newRenderMode": true,
       "name": "Web3 / Blockchain",
-      "link": "https://chat.whatsapp.com/EiIMCGdgEBYItdzWljwcZP",
       "image": "./image/comunidades/newRendering/web3blockchain.jpg",
-      "keywords": ["blockchain", "criptomoedas", "web3"]
+      "keywords": ["blockchain", "criptomoedas", "web3"],
+      "whatsapp": "https://chat.whatsapp.com/EiIMCGdgEBYItdzWljwcZP"
     },
     {
       "newRenderMode": true,
       "name": "XR PB",
-      "link": "https://chat.whatsapp.com/EkC19iKIhr16CnZWboQu0B",
       "image": "./image/comunidades/newRendering/xrpb.jpg",
       "description": "VR/AR/MR",
-      "keywords": ["realidade virtual", "realidade aumentada", "realidade mista", "vr", "ar", "mr"]
+      "keywords": ["realidade virtual", "realidade aumentada", "realidade mista", "vr", "ar", "mr"],
+      "whatsapp": "https://chat.whatsapp.com/EkC19iKIhr16CnZWboQu0B"
     },
     {
       "newRenderMode": true,
       "name": "Zabbix",
-      "link": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa",
       "image": "./image/comunidades/newRendering/zabbix.jpg",
-      "keywords": ["monitoramento", "zabbix"]
+      "keywords": ["monitoramento", "zabbix"],
+      "whatsapp": "https://chat.whatsapp.com/J1q3fJLeb7mCmjYO4H3Mfa"
     },
     {
       "naoFazParteDoCrudpbAinda": true,
       "newRenderMode": true,
       "name": "WTM JP",
-      "link": "",
       "image": "./image/comunidades/newRendering/wtmjp.jpg",
       "description": "Women Techmakers João Pessoa",
       "longDescription": "Comunidade criada para integrar e apoiar mulheres de tecnologia de toda a Paraíba, promovendo eventos e trocando conhecimentos.",
       "keywords": ["mulheres", "diversidade", "inclusão"],
+      "whatsapp": "",
       "instagram": "https://www.instagram.com/wtmjoaopessoa/"
     }
   ]

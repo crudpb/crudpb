@@ -4,7 +4,7 @@ const listaPrincipal = document.getElementById('listaPrincipal');
 // Load communities data
 async function loadCommunities() {
     try {
-        const response = await fetch('./data/communities.json?v=20251120');
+        const response = await fetch('./data/communities.json?v=202511201300');
         const data = await response.json();
         allCommunities = data.communities;
         renderCommunities(allCommunities);
@@ -49,7 +49,7 @@ function traditionalRendering(community, container) {
     const link = document.createElement('a');
     const img = document.createElement('img');
     
-    link.href = community.link;
+    link.href = community.whatsapp;
     link.target = '_blank';
     
     img.src = community.image;
@@ -105,10 +105,10 @@ function newRendering(community, container) {
 
     let hasSocialLinks = false;
 
-    // WhatsApp Icon (using 'link' property)
-    if (community.link) {
+    // WhatsApp Icon
+    if (community.whatsapp) {
         const socialLink = document.createElement('a');
-        socialLink.href = community.link;
+        socialLink.href = community.whatsapp;
         socialLink.target = '_blank';
         socialLink.innerHTML = '<i class="fa fa-whatsapp whatsapp-icon"></i>';
         socialIconsContainer.appendChild(socialLink);
@@ -131,6 +131,36 @@ function newRendering(community, container) {
         socialLink.href = community.website;
         socialLink.target = '_blank';
         socialLink.innerHTML = '<i class="fa fa-globe website-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    // LinkedIn Icon
+    if (community.linkedin) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.linkedin;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-linkedin linkedin-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    // YouTube Icon
+    if (community.youtube) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.youtube;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-youtube youtube-icon"></i>';
+        socialIconsContainer.appendChild(socialLink);
+        hasSocialLinks = true;
+    }
+
+    // GitHub Icon
+    if (community.github) {
+        const socialLink = document.createElement('a');
+        socialLink.href = community.github;
+        socialLink.target = '_blank';
+        socialLink.innerHTML = '<i class="fa fa-github github-icon"></i>';
         socialIconsContainer.appendChild(socialLink);
         hasSocialLinks = true;
     }
