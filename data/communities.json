@@ -135,7 +135,9 @@
       "image": "./image/comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
       "longDescription": "Comunidade de pessoas que fazem parte do ecossistema de Inteligência artificial da Paraíba.",
-      "keywords": ["parai", "inteligência artificial", "machine learning", "deep learning"]
+      "keywords": ["parai", "inteligência artificial", "machine learning", "deep learning"],
+      "instagram": "https://www.instagram.com/comunidade.parai/",
+      "website": "https://comunidadeparai.github.io/parai/"
     },
     {
       "newRenderMode": true,
