@@ -525,16 +525,17 @@ ul {
 /* Tooltip */
 .custom-card-tooltip {
   display: none;
-  position: fixed;
+  position: absolute;
   background: rgba(15, 23, 42, 0.95);
   color: #fff;
   padding: 12px 16px;
   border-radius: var(--radius-md);
   font-size: 0.9rem;
-  max-width: 300px;
-  z-index: 1000;
+  max-width: 250px;
+  z-index: 10;
   pointer-events: none;
   box-shadow: var(--shadow-lg);
+  word-wrap: break-word;
 }
 
 .custom-card.show-tooltip .custom-card-tooltip {

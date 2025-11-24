@@ -149,52 +149,80 @@ function newRendering(community, container) {
     }
 
     // --- Tooltip positioning logic ---
-    // Desktop: show tooltip near mouse
-    customCard.addEventListener('mousemove', function (e) {
+    // Desktop: show tooltip on image hover
+    cardImageWrapper.addEventListener('mousemove', function (e) {
         if (!customCard.classList.contains('show-tooltip')) return;
         if (tooltip.textContent.trim() === '') return;
-        // Offset so tooltip is not directly under cursor
-        const offsetX = 18;
-        const offsetY = 18;
-        let x = e.clientX + offsetX;
-        let y = e.clientY + offsetY;
-        // Prevent tooltip from going off right/bottom edge
-        const rect = tooltip.getBoundingClientRect();
-        if (x + rect.width > window.innerWidth) x = window.innerWidth - rect.width - 10;
-        if (y + rect.height > window.innerHeight) y = window.innerHeight - rect.height - 10;
+
+        // Get card boundaries
+        const cardRect = customCard.getBoundingClientRect();
+        const tooltipRect = tooltip.getBoundingClientRect();
+
+        // Calculate position relative to the card
+        const offsetX = 15;
+        const offsetY = 15;
+        let x = e.clientX - cardRect.left + offsetX;
+        let y = e.clientY - cardRect.top + offsetY;
+
+        // Keep tooltip within card boundaries
+        if (x + tooltipRect.width > cardRect.width) {
+            x = cardRect.width - tooltipRect.width - 10;
+        }
+        if (y + tooltipRect.height > cardRect.height) {
+            y = cardRect.height - tooltipRect.height - 10;
+        }
+        if (x < 10) x = 10;
+        if (y < 10) y = 10;
+
         tooltip.style.left = x + 'px';
         tooltip.style.top = y + 'px';
     });
-    customCard.addEventListener('mouseenter', function (e) {
+
+    cardImageWrapper.addEventListener('mouseenter', function (e) {
         if (tooltip.textContent.trim() === '') return;
         customCard.classList.add('show-tooltip');
     });
-    customCard.addEventListener('mouseleave', function (e) {
+
+    cardImageWrapper.addEventListener('mouseleave', function (e) {
         customCard.classList.remove('show-tooltip');
         tooltip.style.left = '0px';
         tooltip.style.top = '0px';
     });
 
-    // Touch support for tooltip (long press)
+    // Touch support for tooltip (long press on image)
     let touchTimer = null;
-    customCard.addEventListener('touchstart', function (e) {
+    cardImageWrapper.addEventListener('touchstart', function (e) {
         if (tooltip.textContent.trim() === '') return;
         if (e.touches.length > 0) {
             const touch = e.touches[0];
             touchTimer = setTimeout(() => {
                 customCard.classList.add('show-tooltip');
-                // Position tooltip near touch point
-                let x = touch.clientX + 18;
-                let y = touch.clientY + 18;
-                const rect = tooltip.getBoundingClientRect();
-                if (x + rect.width > window.innerWidth) x = window.innerWidth - rect.width - 10;
-                if (y + rect.height > window.innerHeight) y = window.innerHeight - rect.height - 10;
+
+                // Get card boundaries
+                const cardRect = customCard.getBoundingClientRect();
+                const tooltipRect = tooltip.getBoundingClientRect();
+
+                // Calculate position relative to the card
+                let x = touch.clientX - cardRect.left + 15;
+                let y = touch.clientY - cardRect.top + 15;
+
+                // Keep tooltip within card boundaries
+                if (x + tooltipRect.width > cardRect.width) {
+                    x = cardRect.width - tooltipRect.width - 10;
+                }
+                if (y + tooltipRect.height > cardRect.height) {
+                    y = cardRect.height - tooltipRect.height - 10;
+                }
+                if (x < 10) x = 10;
+                if (y < 10) y = 10;
+
                 tooltip.style.left = x + 'px';
                 tooltip.style.top = y + 'px';
             }, 500); // 500ms long press
         }
     });
-    customCard.addEventListener('touchend', function (e) {
+
+    cardImageWrapper.addEventListener('touchend', function (e) {
         clearTimeout(touchTimer);
         setTimeout(() => {
             customCard.classList.remove('show-tooltip');
@@ -202,7 +230,8 @@ function newRendering(community, container) {
             tooltip.style.top = '0px';
         }, 1200); // Hide after 1.2s
     });
-    customCard.addEventListener('touchmove', function (e) {
+
+    cardImageWrapper.addEventListener('touchmove', function (e) {
         clearTimeout(touchTimer);
     });
 
