@@ -1,3 +1,7 @@
+20251124
+--------------------------
+* Modernização usando o Google Antigravity
+
 20251028
 --------------------------
 * Resolvendo cache no browser do usuário final
