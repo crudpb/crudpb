@@ -1,79 +1,114 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CRUDPB</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="./image/logo_2.ico?v=202511201300" />
-    <link rel="stylesheet" href="css/styles.css?v=202511201300" />
-    <link rel="stylesheet" href="css/font-awesome.min.css?v=202511201300" />
-    <script src="/script.js?v=202511201300" defer></script>
-    <script
-      src="https://kit.fontawesome.com/4cf7d8e589.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .card-social-icons {
-        text-align: center;
-        padding-top: 8px;
-      }
-      .card-social-icons a {
-        margin: 0 8px;
-        font-size: 1.2rem;
-        transition: transform 0.2s;
-        display: inline-block; /* Necessário para a transição de hover */
-      }
-      .card-social-icons a:hover {
-        transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
-      }
 
-      /* Cores específicas para cada ícone */
-      .whatsapp-icon {
-        color: #25D366;
-      }
-      .instagram-icon {
-        /* Gradiente de cores do Instagram */
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: #E4405F; /* Fallback para navegadores sem suporte */
-      }
-      .website-icon {
-        color: #4A90E2; /* Um azul para representar um link web genérico */
-      }
+<head>
+  <title>CRUDPB</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="./image/logo_2.ico?v=202511201300" />
+  <link rel="stylesheet" href="css/styles.css?v=202511201300" />
+  <link rel="stylesheet" href="css/font-awesome.min.css?v=202511201300" />
+  <script src="/script.js?v=202511201300" defer></script>
+  <script src="https://kit.fontawesome.com/4cf7d8e589.js" crossorigin="anonymous"></script>
+  <style>
+    .card-social-icons {
+      text-align: center;
+      padding-top: 8px;
+    }
 
-      .linkedin-icon {
-        color: #0077B5; /* Cor original do LinkedIn */
-      }
-      .youtube-icon {
-        color: #FF0000; /* Cor original do YouTube */
-      }
-      .github-icon {
-        color: #333; /* Cor original do GitHub */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="minimal-margin">
-      <div class="redes-sociais">
-        <a href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank"
-          ><i class="fa fa-whatsapp"></i
-        ></a>
-        <a href="https://www.instagram.com/crud.pb/" target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a href="https://www.linkedin.com/company/crudpb/" target="_blank"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a href="mailto:contato@crudpb.org" target="_blank">
-          <i class="fa fa-envelope"></i
-        ></a>
-      </div>
-      <header>
-        <div>
+    .card-social-icons a {
+      margin: 0 8px;
+      font-size: 1.2rem;
+      transition: transform 0.2s;
+      display: inline-block;
+      /* Necessário para a transição de hover */
+    }
+
+    .card-social-icons a:hover {
+      transform: scale(1.2);
+      /* Efeito de zoom ao passar o mouse */
+    }
+
+    /* Cores específicas para cada ícone */
+    .whatsapp-icon {
+      color: #25D366;
+    }
+
+    .instagram-icon {
+      /* Gradiente de cores do Instagram */
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #E4405F;
+      /* Fallback para navegadores sem suporte */
+    }
+
+    .website-icon {
+      color: #4A90E2;
+      /* Um azul para representar um link web genérico */
+    }
+
+    .linkedin-icon {
+      color: #0077B5;
+      /* Cor original do LinkedIn */
+    }
+
+    .youtube-icon {
+      color: #FF0000;
+      /* Cor original do YouTube */
+    }
+
+    .github-icon {
+      color: #333;
+      /* Cor original do GitHub */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="main-header">
+      <div class="container header-content">
+        <div class="logo-container">
           <img src="./image/logo_transparente.png" alt="CRUDPB logo" class="logo" />
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active">Home / Sobre</a>
+          <a href="codigoDeConduta.html" class="nav-link">Código de Conduta</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1><b>CRUDPB</b> <span class="subtitle">Comunidade de Devs da Paraíba</span></h1>
+            <p class="hero-tagline">Unindo a comunidade de desenvolvedores da Paraíba.</p>
+
+            <div class="hero-actions">
+              <div class="action-card">
+                <h3>Para Desenvolvedores</h3>
+                <p>Se você programa e é da Paraíba, o CRUDPB é para você!</p>
+                <a class="button primary-btn" href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank">
+                  <i class="fa fa-whatsapp"></i> Junte-se agora!
+                </a>
+              </div>
+              <div class="action-card">
+                <h3>Para Recrutadores</h3>
+                <p>Encontre os melhores talentos da região.</p>
+                <div class="button-group">
+                  <a class="button secondary-btn" href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt"
+                    target="_blank">Vagas #1</a>
+                  <a class="button secondary-btn" href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN"
+                    target="_blank">Vagas #2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="carousel-container">
             <div class="carousel-track">
               <!-- Imagens Originais -->
@@ -96,162 +131,138 @@
               <img src="./image/parai_meetup1_mesa_redonda.jpg" alt="Mesa redonda no meetup Paraí" />
             </div>
           </div>
-          <h1><b>CRUDPB</b> - Comunidade de Devs da Paraíba</h1>
-          <nav>
-            <a href="index.html">Home / Sobre</a>
-            <a href="codigoDeConduta.html">Código de Conduta</a>
-          </nav>
         </div>
-      </header>
-      <div class="grid-container">
-        <section class="leading">
-          <div class="header">
-            <h2>Unindo a comunidade de desenvolvedores da Paraíba.</h2>
+      </section>
 
-            <div class="mensagens-destaque">
-              <div class="destaque-1">
-                <h2>
-                  Se você programa, <i>mesmo que eventualmente</i>, e é da Paraíba
-                  ou tem negócios nessa região, o CRUDPB é para você!
-                </h2>
-                <a class="button"
-                  href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8"
-                  target="_blank"
-                  >Junte-se ao CRUDPB agora!</a
-                >
-              </div>
-              <div class="destaque-2">
-                <h2>
-                  Se você esta à procura dos melhores talentos que moram na região
-                  ou que podem trabalhar remotamente, então divulge suas vagas no
-                  grupo #vagas!
-                </h2>
-                <a class="button"
-                  href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt"
-                  target="_blank"
-                  >Acesse o grupo #vagas! (grupo 1)</a
-                >
-                <a class="button"
-                  href="https://bit.ly/crudpb-vagas2"
-                  target="_blank"
-                  >Acesse o grupo #vagas! (grupo 2)</a
-                >
-              </div>
+      <section class="about-section container">
+        <div class="about-text">
+          <p>O <strong>CRUDPB</strong> (<i>Comunidade Reunida Unificada de Devs da Paraíba</i>) nasce com o objetivo de
+            fortalecer a comunidade de tecnologia do estado. Unindo diversas comunidades técnicas em uma estrutura
+            única, queremos promover a colaboração, o compartilhamento de conhecimento e a criação de um movimento forte
+            e inspirador.</p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <h3>Como funciona?</h3>
+              <p>Cada comunidade participante terá seu próprio grupo no WhatsApp, integrado à comunidade "guarda-chuva"
+                do CRUDPB. Isso garante autonomia e facilita a comunicação.</p>
             </div>
-
-            <p>O CRUDPB (<i><b>C</b>omunidade <R>R</b>eunida <b>U</b>nificada de <b>D</b>evs da <b>P</b>araíba</i>) nasce com o objetivo de fortalecer a comunidade de tecnologia do estado. Unindo diversas comunidades técnicas em uma estrutura única, queremos promover a colaboração, o compartilhamento de conhecimento e a criação de um movimento forte e inspirador para desenvolvedores e profissionais de tecnologia.</p>
-          
-            <h3>Como funciona?</h3>
-          
-            <p>Cada comunidade participante terá seu próprio grupo no WhatsApp, integrado à comunidade "guarda-chuva" do CRUDPB. Isso garante autonomia para cada grupo, ao mesmo tempo que facilita a comunicação e a interação entre todos os membros. Líderes de cada comunidade serão administradores de seus respectivos grupos e um grupo deles também terão acesso administrativo ao CRUDPB.</p>
-
-              
-            <!-- NOVO TEXTO EM DESTAQUE AQUI -->
-            <div class="novo-membro">
-                <h3 class="novo-membro-cabecalho">Atenção, novo membro!</h3>
-                <p class="novo-membro-texto">Devido à alta demanda e limitações do WhatsApp, nem todos os grupos de comunidades estão listados diretamente no nosso grupo principal. Para descobrir e se conectar a TODAS as comunidades que compõem o CRUDPB, por favor, explore a seção "Comunidades: Encontre a sua!". É a melhor forma de encontrar as suas!</p>
+            <div class="info-item">
+              <h3>Benefícios para Devs</h3>
+              <ul>
+                <li>Networking com profissionais</li>
+                <li>Workshops e palestras</li>
+                <li>Vagas exclusivas</li>
+              </ul>
             </div>
-            <!-- FIM DO NOVO TEXTO EM DESTAQUE -->
-
-  
-            <h3>Benefícios para desenvolvedores:</h3>
-          
-            <ul>
-              <li><b>Conectar-se com outros profissionais</b>: Ampliar sua rede de contatos, trocar ideias e colaborar em projetos.</li>
-              <li><b>Aprender e se desenvolver</b>: Participar de eventos, workshops e palestras sobre as mais diversas tecnologias.</li>
-              <li><b>Manter-se atualizado</b>: Acompanhar as últimas tendências e novidades do mercado de tecnologia.</li>
-              <li><b>Encontrar novas oportunidades</b>: Ter acesso a um canal exclusivo de vagas de emprego (#vagas).</li>
-              <li><b>Fazer parte de algo maior</b>: Contribuir para o crescimento da comunidade de tecnologia da Paraíba.</li>
-            </ul>
-          
-            <h3>Benefícios para empresas:</h3>
-          
-            <ul>
-              <li><b>Ampliar o alcance a profissionais qualificados</b>: Através do grupo #vagas, empresas podem anunciar suas oportunidades para um público amplo e engajado de desenvolvedores.</li>
-              <li><b>Fortalecer sua marca</b>: Participar do CRUDPB demonstra o compromisso da empresa com a comunidade de tecnologia local, atraindo e retendo talentos.</li>
-            </ul>
-          
-            <h3>Participe e faça a diferença!</h3>
-
-          
-            <p>Para que o CRUDPB alcance seu potencial, precisamos da sua participação! Convidamos todos os desenvolvedores e profissionais de tecnologia da Paraíba a se juntarem à sua comunidade dentro do CRUDPB. Juntos, podemos construir um ecossistema de tecnologia ainda mais forte e vibrante em nosso estado.</p>
-          
-
-            <p>
-              <a
-                href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8"
-                target="_blank"
-                >Click aqui para se juntar ao CRUDPB no WhatsApp.</a
-              >
-            </p>
-
-            <p>
-              <b
-                >Não esqueça de entrar nos grupos das comunidades que lhe
-                interessam, e também não deixe de entrar nos 5 grupos abaixo:</b
-              >
-            </p>
-
-            <ul id="grupos_importantes">
-              <li class="grupo-importante-item">
-                <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl"target="_blank">
-                  <img src="./image/grupos_importantes/crudpb_geral.JPG" alt="Ícone do grupo #geral" class="grupo-importante-avatar">
-                </a>
-                #geral, para comunicações diversas.
-              </li>
-              <li class="grupo-importante-item">
-                <a href="https://chat.whatsapp.com/LSgBX8sWLw3Jg6bfDhV1OE" target="_blank">
-                  <img src="./image/grupos_importantes/crudpb_eventos.JPG" alt="Ícone do grupo #eventos" class="grupo-importante-avatar">
-                </a>
-                #eventos, para saber de eventos ou publicar os seus.
-              </li>
-              <li class="grupo-importante-item">
-                <a href="https://chat.whatsapp.com/JkZwzeJuIiH84NNHB2uDZE" target="_blank">
-                  <img src="./image/grupos_importantes/crudpb_carreira_tech.JPG" alt="Ícone do grupo #carreira-tech" class="grupo-importante-avatar">
-                </a>
-                #carreira-tech, para discussões focadas em carreira.
-              </li>
-              <li class="grupo-importante-item">
-                <a
-                    href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt"
-                    target="_blank"
-                    >
-                <img src="./image/grupos_importantes/crudpb_vagas.JPG" alt="Ícone do grupo #vagas" class="grupo-importante-avatar">
-                </a
-                  >
-                #vagas (grupo 1), para saber de vagas ou mesmo publicar algumas.
-              </li>
-              <li class="grupo-importante-item">
-                <a
-                    href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN"
-                    target="_blank"
-                    >
-                <img src="./image/grupos_importantes/crudpb_vagas2.JPG" alt="Ícone do grupo #vagas" class="grupo-importante-avatar">
-                </a
-                  >
-                #vagas (grupo 2)
-              </li>
-              <li class="grupo-importante-item">
-                <a
-                    href="https://chat.whatsapp.com/Hs93jwH2UH3AMlqgkaHzCg"
-                    target="_blank"
-                    >
-                <img src="./image/grupos_importantes/crudpb_mercado.JPG" alt="Ícone do grupo #mercado" class="grupo-importante-avatar">
-                </a
-                  >
-                #mercado, para venda e compra diversas.
-              </li>
-            </ul>
+            <div class="info-item">
+              <h3>Benefícios para Empresas</h3>
+              <ul>
+                <li>Acesso a talentos qualificados</li>
+                <li>Fortalecimento de marca (Employer Branding)</li>
+              </ul>
+            </div>
           </div>
-        </section>
-        <section id="lista">
-          <article class="line1">
-            <h2>Comunidades: Encontre a sua!</h2>
-            <input type="text" id="searchInput" class="search-input" placeholder="Pesquise por nome ou tecnologia (ex: java, ruby, agile)...">
-          </article>
-          <section id="listaPrincipal" class="cards"></section>
-        </section>
+        </div>
+      </section>
+
+      <section class="important-groups-section container">
+        <h2>Grupos Essenciais</h2>
+        <p>Não deixe de entrar nestes 5 grupos principais:</p>
+        <ul id="grupos_importantes" class="groups-grid">
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_geral.JPG" alt="Ícone do grupo #geral" class="grupo-avatar">
+              <div class="group-info">
+                <strong>#geral</strong>
+                <span>Comunicações diversas</span>
+              </div>
+            </a>
+          </li>
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/LSgBX8sWLw3Jg6bfDhV1OE" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_eventos.JPG" alt="Ícone do grupo #eventos"
+                class="grupo-avatar">
+              <div class="group-info">
+                <strong>#eventos</strong>
+                <span>Divulgação de eventos</span>
+              </div>
+            </a>
+          </li>
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/JkZwzeJuIiH84NNHB2uDZE" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_carreira_tech.JPG" alt="Ícone do grupo #carreira-tech"
+                class="grupo-avatar">
+              <div class="group-info">
+                <strong>#carreira-tech</strong>
+                <span>Discussões sobre carreira</span>
+              </div>
+            </a>
+          </li>
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_vagas.JPG" alt="Ícone do grupo #vagas" class="grupo-avatar">
+              <div class="group-info">
+                <strong>#vagas (1)</strong>
+                <span>Oportunidades de emprego</span>
+              </div>
+            </a>
+          </li>
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_vagas2.JPG" alt="Ícone do grupo #vagas" class="grupo-avatar">
+              <div class="group-info">
+                <strong>#vagas (2)</strong>
+                <span>Mais oportunidades</span>
+              </div>
+            </a>
+          </li>
+          <li class="grupo-importante-item">
+            <a href="https://chat.whatsapp.com/Hs93jwH2UH3AMlqgkaHzCg" target="_blank" class="group-link">
+              <img src="./image/grupos_importantes/crudpb_mercado.JPG" alt="Ícone do grupo #mercado"
+                class="grupo-avatar">
+              <div class="group-info">
+                <strong>#mercado</strong>
+                <span>Compra e venda</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="lista" class="communities-section container">
+        <div class="communities-header">
+          <h2>Comunidades: Encontre a sua!</h2>
+          <div class="search-wrapper">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" id="searchInput" class="search-input"
+              placeholder="Pesquise por nome ou tecnologia (ex: java, ruby)...">
+          </div>
+        </div>
+
+        <!-- Alert for new members -->
+        <div class="novo-membro">
+          <h3 class="novo-membro-cabecalho"><i class="fa fa-info-circle"></i> Atenção, novo membro!</h3>
+          <p class="novo-membro-texto">Devido à alta demanda, nem todos os grupos estão listados no grupo principal.
+            Explore esta seção para encontrar todas as comunidades!</p>
+        </div>
+
+        <div id="listaPrincipal" class="cards-grid"></div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container footer-content">
+        <div class="social-links">
+          <a href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/crud.pb/" target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/crudpb/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:contato@crudpb.org" target="_blank"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 CRUDPB - Comunidade de Devs da Paraíba. Todos os direitos reservados.</p>
       </div>
-    </div>
-  </body>
+    </footer>
+  </div>
+</body>
+
 </html>

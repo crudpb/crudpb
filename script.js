@@ -16,13 +16,7 @@ async function loadCommunities() {
 function renderCommunities(communities) {
     listaPrincipal.innerHTML = ''; // Clear current list
     communities.forEach(community => {
-        if (community.hasOwnProperty('newRenderMode') && community.newRenderMode) {
-            newRendering(community, listaPrincipal);
-        } else {
-            // Assuming 'container' is a valid fallback, though it's not defined in the original script scope
-            // For this implementation, we focus on newRendering as it's the primary mode.
-            traditionalRendering(community, listaPrincipal); 
-        }
+        newRendering(community, listaPrincipal);
     });
 }
 
@@ -44,24 +38,6 @@ function filterCommunities() {
     renderCommunities(filtered);
 }
 
-function traditionalRendering(community, container) {
-    const article = document.createElement('article');
-    const link = document.createElement('a');
-    const img = document.createElement('img');
-    
-    link.href = community.whatsapp;
-    link.target = '_blank';
-    
-    img.src = community.image;
-    img.alt = community.name;
-    img.className = 'article-img';
-    
-    link.appendChild(img);
-    article.appendChild(link);
-
-    container.appendChild(article);
-}
-
 function newRendering(community, container) {
     const customCard = document.createElement('div');
     const cardImageWrapper = document.createElement('div');
@@ -69,10 +45,12 @@ function newRendering(community, container) {
     const cardImage = document.createElement('img');
     const cardText = document.createElement('div');
     const cardTextFull = document.createElement('div');
+    const cardDescriptionWrapper = document.createElement('div');
     const tooltip = document.createElement('div');
 
     customCard.className = 'custom-card';
     cardImageWrapper.className = 'card-image-wrapper';
+    cardDescriptionWrapper.className = 'card-description-wrapper';
 
 
     cardImage.src = community.image;
@@ -96,7 +74,8 @@ function newRendering(community, container) {
     cardImageWrapper.appendChild(cardImage);
 
     customCard.appendChild(cardText);
-    customCard.appendChild(cardTextFull);
+    cardDescriptionWrapper.appendChild(cardTextFull);
+    customCard.appendChild(cardDescriptionWrapper);
     customCard.appendChild(tooltip);
 
     // --- Social Icons ---
@@ -227,7 +206,7 @@ function newRendering(community, container) {
         clearTimeout(touchTimer);
     });
 
-        container.appendChild(customCard);
+    container.appendChild(customCard);
 }
 
 // Initialize everything when DOM is loaded
