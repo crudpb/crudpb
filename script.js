@@ -4,7 +4,7 @@ const listaPrincipal = document.getElementById('listaPrincipal');
 // Load communities data
 async function loadCommunities() {
     try {
-        const response = await fetch('./data/communities.json?v=202512191400');
+        const response = await fetch('./data/communities.json?v=202603301100');
         const data = await response.json();
         allCommunities = data.communities;
         renderCommunities(allCommunities);
