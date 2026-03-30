@@ -247,6 +247,20 @@
     },
     {
       "newRenderMode": true,
+      "name": "AWS UG João Pessoa",
+      "image": "./image/comunidades/newRendering/awsUserGroupJoaoPessoa.jpg",
+      "description": "Computação na nuvem focada em AWS",
+      "longDescription": "Grupo com o objetivo de fomentar a comunidade pessoense de Cloud Computing com foco em AWS, desde iniciantes até especialistas.",
+      "keywords": [
+        "aws",
+        "amazon",
+        "cloud computing",
+        "computação na nuvem"
+      ],
+      "whatsapp": "https://chat.whatsapp.com/DX8a8bo9eaKHLacR9tqgAD"
+    },
+    {
+      "newRenderMode": true,
       "name": "Paraí",
       "image": "./image/comunidades/newRendering/parai.jpg",
       "description": "Inteligência Artificial na Paraíba",
