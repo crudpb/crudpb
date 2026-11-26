@@ -65,18 +65,36 @@ ul {
 /* Fonts */
 @font-face {
   font-family: "Montserrat";
-  src: url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900;
+  src: url("../font/Montserrat-Variable-latin.woff2") format("woff2"),
+       url("../font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Sairra Condensad";
-  src: url("../font/SairaCondensed-Regular.ttf") format("truetype");
+  src: url("../font/SairaCondensed-Regular-latin.woff2") format("woff2"),
+       url("../font/SairaCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Sairra Condensad Bold";
-  src: url("../font/SairaCondensed-Bold.ttf") format("truetype");
+  src: url("../font/SairaCondensed-Bold-latin.woff2") format("woff2"),
+       url("../font/SairaCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Inline SVG Icons */
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 /* Layout Utilities */
@@ -90,11 +108,12 @@ ul {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: clip;
 }
 
 /* Header */
 .main-header {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -107,11 +126,71 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
   height: 50px;
   width: auto;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus-visible {
+  background-color: #eff6ff;
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.menu-toggle-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 14px;
+}
+
+.menu-toggle-bars span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  transform-origin: center;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bars span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bars span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .menu-toggle-bars span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .main-nav {
@@ -124,6 +203,7 @@ ul {
   color: var(--secondary-color);
   padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-md);
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -498,6 +578,22 @@ ul {
   min-height: 2.6rem;
 }
 
+.card-social-icons {
+  text-align: center;
+  padding-top: 8px;
+}
+
+.card-social-icons a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.card-social-icons a:hover {
+  transform: scale(1.2);
+}
+
 .whatsapp-icon {
   color: #25D366;
 }
@@ -597,6 +693,56 @@ ul {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .main-header {
+    padding: 0.65rem 0;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .main-nav {
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 0.35rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 1px solid transparent;
+    transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.25s ease, padding-top 0.25s ease, visibility 0.25s;
+  }
+
+  .main-nav.is-open {
+    max-height: 200px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    margin-top: 0.65rem;
+    padding-top: 0.65rem;
+    border-top-color: var(--border-color);
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0.7rem 0.9rem;
+    width: 100%;
+  }
+
   .hero-content h1 {
     font-size: 2.2rem;
   }

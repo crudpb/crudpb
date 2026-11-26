@@ -1,3 +1,11 @@
+20261126
+--------------------------
+* Otimização de imagens para WebP (carrossel, grupos essenciais, comunidades, logo) e favicon otimizado em PNG (~96% de redução no peso de imagens)
+* Conversão das fontes (Montserrat e Saira Condensed) para WOFF2 com font-display: swap e preload
+* Substituição do Font Awesome (CSS local e Kit externo) por ícones SVG inline, eliminando requisições de terceiros
+* Otimização de carregamento com preload do communities.json, lazy loading/decoding assíncrono nas imagens, DocumentFragment no script.js e remoção do script desnecessário em codigoDeConduta.html
+* Implementação de menu hambúrguer responsivo para telas mobile com correção de overflow horizontal
+
 20251124
 --------------------------
 * Modernização usando o Google Antigravity

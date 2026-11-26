@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <title>CRUDPB</title>
@@ -7,65 +7,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="./image/logo_2.ico?v=202603301130" />
-  <link rel="stylesheet" href="css/styles.css?v=202603301130" />
-  <link rel="stylesheet" href="css/font-awesome.min.css?v=202603301130" />
-  <script src="/script.js?v=202603301130" defer></script>
-  <script src="https://kit.fontawesome.com/4cf7d8e589.js" crossorigin="anonymous"></script>
-  <style>
-    .card-social-icons {
-      text-align: center;
-      padding-top: 8px;
-    }
-
-    .card-social-icons a {
-      margin: 0 8px;
-      font-size: 1.2rem;
-      transition: transform 0.2s;
-      display: inline-block;
-      /* Necessário para a transição de hover */
-    }
-
-    .card-social-icons a:hover {
-      transform: scale(1.2);
-      /* Efeito de zoom ao passar o mouse */
-    }
-
-    /* Cores específicas para cada ícone */
-    .whatsapp-icon {
-      color: #25D366;
-    }
-
-    .instagram-icon {
-      /* Gradiente de cores do Instagram */
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: #E4405F;
-      /* Fallback para navegadores sem suporte */
-    }
-
-    .website-icon {
-      color: #4A90E2;
-      /* Um azul para representar um link web genérico */
-    }
-
-    .linkedin-icon {
-      color: #0077B5;
-      /* Cor original do LinkedIn */
-    }
-
-    .youtube-icon {
-      color: #FF0000;
-      /* Cor original do YouTube */
-    }
-
-    .github-icon {
-      color: #333;
-      /* Cor original do GitHub */
-    }
-  </style>
+  <link rel="icon" type="image/png" sizes="64x64" href="./image/optimized/favicon.png?v=202611261541" />
+  <link rel="preload" href="font/Montserrat-Variable-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="font/SairaCondensed-Bold-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="./data/communities.json?v=202611261541" as="fetch" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css?v=202611261541" />
+  <script src="./script.js?v=202611261541" defer></script>
 </head>
 
 <body>
@@ -73,14 +20,40 @@
     <header class="main-header">
       <div class="container header-content">
         <div class="logo-container">
-          <img src="./image/logo_transparente.png" alt="CRUDPB logo" class="logo" />
+          <a href="index.html" class="logo-link" aria-label="CRUDPB - Página inicial">
+            <img src="./image/optimized/logo_transparente.webp" alt="CRUDPB logo" class="logo" width="50" height="50" decoding="async" fetchpriority="high" />
+          </a>
         </div>
-        <nav class="main-nav">
+        <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+          <span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
           <a href="index.html" class="nav-link active">Home / Sobre</a>
           <a href="codigoDeConduta.html" class="nav-link">Código de Conduta</a>
         </nav>
       </div>
     </header>
+    <script>
+      (function () {
+        var btn = document.querySelector('.menu-toggle');
+        var nav = document.getElementById('mainNav');
+        if (!btn || !nav) return;
+        function setOpen(open) {
+          btn.setAttribute('aria-expanded', String(open));
+          btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+          nav.classList.toggle('is-open', open);
+        }
+        btn.addEventListener('click', function () {
+          setOpen(btn.getAttribute('aria-expanded') !== 'true');
+        });
+        document.addEventListener('click', function (e) {
+          if (nav.classList.contains('is-open') && !e.target.closest('.main-header')) setOpen(false);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && nav.classList.contains('is-open')) { setOpen(false); btn.focus(); }
+        });
+      })();
+    </script>
 
     <main>
       <section class="hero-section">
@@ -93,8 +66,8 @@
               <div class="action-card">
                 <h3>Para Desenvolvedores</h3>
                 <p>Se você programa e é da Paraíba, o CRUDPB é para você!</p>
-                <a class="button primary-btn" href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank">
-                  <i class="fa fa-whatsapp"></i> Junte-se agora!
+                <a class="button primary-btn" href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank" rel="noopener noreferrer">
+                  <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Junte-se agora!
                 </a>
               </div>
               <div class="action-card">
@@ -102,9 +75,9 @@
                 <p>Encontre os melhores talentos da região.</p>
                 <div class="button-group">
                   <a class="button secondary-btn" href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt"
-                    target="_blank">Vagas #1</a>
+                    target="_blank" rel="noopener noreferrer">Vagas #1</a>
                   <a class="button secondary-btn" href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN"
-                    target="_blank">Vagas #2</a>
+                    target="_blank" rel="noopener noreferrer">Vagas #2</a>
                 </div>
               </div>
             </div>
@@ -113,23 +86,23 @@
           <div class="carousel-container">
             <div class="carousel-track">
               <!-- Imagens Originais -->
-              <img src="./image/jampa_ruby.jpeg" alt="Evento Jampa Ruby" />
-              <img src="./image/jampa_ruby2.jpeg" alt="Evento Jampa Ruby" />
-              <img src="./image/meetup_grude4j_java.jpg" alt="Meetup Grude4J Java" />
-              <img src="./image/parai.jpg" alt="Evento Paraí" />
-              <img src="./image/parai3.jpg" alt="Evento Paraí" />
-              <img src="./image/horaExtraJP.jpeg" alt="Evento Hora Extra JP" />
-              <img src="./image/meetup_parai_estacio.jpg" alt="Meetup Paraí na Estácio" />
-              <img src="./image/parai_meetup1_mesa_redonda.jpg" alt="Mesa redonda no meetup Paraí" />
+              <img src="./image/optimized/carousel/jampa_ruby.webp" alt="Evento Jampa Ruby" width="300" height="180" decoding="async" fetchpriority="high" />
+              <img src="./image/optimized/carousel/jampa_ruby2.webp" alt="Evento Jampa Ruby" width="300" height="180" decoding="async" />
+              <img src="./image/optimized/carousel/meetup_grude4j_java.webp" alt="Meetup Grude4J Java" width="300" height="180" decoding="async" />
+              <img src="./image/optimized/carousel/parai.webp" alt="Evento Paraí" width="300" height="180" decoding="async" />
+              <img src="./image/optimized/carousel/parai3.webp" alt="Evento Paraí" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/horaExtraJP.webp" alt="Evento Hora Extra JP" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/meetup_parai_estacio.webp" alt="Meetup Paraí na Estácio" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/parai_meetup1_mesa_redonda.webp" alt="Mesa redonda no meetup Paraí" width="300" height="180" loading="lazy" decoding="async" />
               <!-- Imagens Duplicadas para o loop -->
-              <img src="./image/jampa_ruby.jpeg" alt="Evento Jampa Ruby" />
-              <img src="./image/jampa_ruby2.jpeg" alt="Evento Jampa Ruby" />
-              <img src="./image/meetup_grude4j_java.jpg" alt="Meetup Grude4J Java" />
-              <img src="./image/parai.jpg" alt="Evento Paraí" />
-              <img src="./image/parai3.jpg" alt="Evento Paraí" />
-              <img src="./image/horaExtraJP.jpeg" alt="Evento Hora Extra JP" />
-              <img src="./image/meetup_parai_estacio.jpg" alt="Meetup Paraí na Estácio" />
-              <img src="./image/parai_meetup1_mesa_redonda.jpg" alt="Mesa redonda no meetup Paraí" />
+              <img src="./image/optimized/carousel/jampa_ruby.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/jampa_ruby2.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/meetup_grude4j_java.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/parai.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/parai3.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/horaExtraJP.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/meetup_parai_estacio.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
+              <img src="./image/optimized/carousel/parai_meetup1_mesa_redonda.webp" alt="" aria-hidden="true" width="300" height="180" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -172,8 +145,8 @@
         <p>Não deixe de entrar nestes 6 grupos principais:</p>
         <ul id="grupos_importantes" class="groups-grid">
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_geral.JPG" alt="Ícone do grupo #geral" class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_geral.webp" alt="Ícone do grupo #geral" class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#geral</strong>
                 <span>Comunicações diversas</span>
@@ -181,9 +154,9 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/LSgBX8sWLw3Jg6bfDhV1OE" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_eventos.JPG" alt="Ícone do grupo #eventos"
-                class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/LSgBX8sWLw3Jg6bfDhV1OE" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_eventos.webp" alt="Ícone do grupo #eventos"
+                class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#eventos</strong>
                 <span>Divulgação de eventos</span>
@@ -191,9 +164,9 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/JkZwzeJuIiH84NNHB2uDZE" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_carreira_tech.JPG" alt="Ícone do grupo #carreira-tech"
-                class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/JkZwzeJuIiH84NNHB2uDZE" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_carreira_tech.webp" alt="Ícone do grupo #carreira-tech"
+                class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#carreira-tech</strong>
                 <span>Discussões sobre carreira</span>
@@ -201,8 +174,8 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_vagas.JPG" alt="Ícone do grupo #vagas" class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_vagas.webp" alt="Ícone do grupo #vagas" class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#vagas (1)</strong>
                 <span>Oportunidades de emprego</span>
@@ -210,8 +183,8 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_vagas2.JPG" alt="Ícone do grupo #vagas" class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/L8u00GVm3cy3obWTMzkHuN" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_vagas2.webp" alt="Ícone do grupo #vagas" class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#vagas (2)</strong>
                 <span>Mais oportunidades</span>
@@ -219,9 +192,9 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/Hs93jwH2UH3AMlqgkaHzCg" target="_blank" class="group-link">
-              <img src="./image/grupos_importantes/crudpb_mercado.JPG" alt="Ícone do grupo #mercado"
-                class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/Hs93jwH2UH3AMlqgkaHzCg" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/crudpb_mercado.webp" alt="Ícone do grupo #mercado"
+                class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#mercado</strong>
                 <span>Compra e venda</span>
@@ -229,9 +202,9 @@
             </a>
           </li>
           <li class="grupo-importante-item">
-            <a href="https://chat.whatsapp.com/KALew4YSJIQ909gpK5VJqh" target="_blank" class="group-link">
-              <img src="./image/comunidades/newRendering/divulgacaoDevLink.png" alt="Ícone do grupo #divulgaçãoDevLinks"
-                class="grupo-avatar">
+            <a href="https://chat.whatsapp.com/KALew4YSJIQ909gpK5VJqh" target="_blank" rel="noopener noreferrer" class="group-link">
+              <img src="./image/optimized/grupos/divulgacaoDevLink.webp" alt="Ícone do grupo #divulgaçãoDevLinks"
+                class="grupo-avatar" width="50" height="50" loading="lazy" decoding="async">
               <div class="group-info">
                 <strong>#divulgaçãoDevLinks</strong>
                 <span>Compartilhando bons links de desenvolvimento</span>
@@ -245,7 +218,7 @@
         <div class="communities-header">
           <h2>Comunidades: Encontre a sua!</h2>
           <div class="search-wrapper">
-            <i class="fa fa-search search-icon"></i>
+            <svg class="icon search-icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
             <input type="text" id="searchInput" class="search-input"
               placeholder="Pesquise por nome ou tecnologia (ex: java, ruby)...">
           </div>
@@ -253,7 +226,7 @@
 
         <!-- Alert for new members -->
         <div class="novo-membro">
-          <h3 class="novo-membro-cabecalho"><i class="fa fa-info-circle"></i> Atenção, novo membro!</h3>
+          <h3 class="novo-membro-cabecalho"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zm-40-176h24v-64h-24c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-80c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> Atenção, novo membro!</h3>
           <p class="novo-membro-texto">Devido à alta demanda, nem todos os grupos estão listados no grupo principal.
             Explore esta seção para encontrar todas as comunidades!</p>
         </div>
@@ -265,10 +238,10 @@
     <footer class="main-footer">
       <div class="container footer-content">
         <div class="social-links">
-          <a href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank"><i class="fa fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/crud.pb/" target="_blank"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/crudpb/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:contato@crudpb.org" target="_blank"><i class="fa fa-envelope"></i></a>
+          <a href="https://chat.whatsapp.com/JeBk3QuvkuOBgrtKqNOid8" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp CRUDPB"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+          <a href="https://www.instagram.com/crud.pb/" target="_blank" rel="noopener noreferrer" aria-label="Instagram CRUDPB"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+          <a href="https://www.linkedin.com/company/crudpb/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn CRUDPB"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></a>
+          <a href="mailto:contato@crudpb.org" target="_blank" rel="noopener noreferrer" aria-label="E-mail CRUDPB"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48H48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
         </div>
         <p>&copy; 2026 CRUDPB - Comunidade de Devs da Paraíba. Todos os direitos reservados.</p>
       </div>
