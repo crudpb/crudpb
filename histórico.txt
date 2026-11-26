@@ -5,6 +5,9 @@
 * Substituição do Font Awesome (CSS local e Kit externo) por ícones SVG inline, eliminando requisições de terceiros
 * Otimização de carregamento com preload do communities.json, lazy loading/decoding assíncrono nas imagens, DocumentFragment no script.js e remoção do script desnecessário em codigoDeConduta.html
 * Implementação de menu hambúrguer responsivo para telas mobile com correção de overflow horizontal
+* Melhorias de UX/UI: chips de filtro por categoria com contagem, busca tolerante a acentos sincronizada com a URL (?q=&cat=), contador de resultados e estado vazio amigável
+* Redesign dos cards das comunidades com CTA principal ("Entrar no WhatsApp"), badges de categoria/parceira e expansão inline acessível ("Ver mais") no lugar do tooltip escondido
+* Navegação por âncoras com rolagem suave, indicadores de prova social no hero, carrossel acessível (pausa no hover e prefers-reduced-motion), botão "Voltar ao topo", banner de sugestão de comunidades, correção da contagem de 7 grupos essenciais e meta tags Open Graph para preview no WhatsApp
 
 20251124
 --------------------------

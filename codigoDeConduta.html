@@ -4,12 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="O CRUDPB tem código de conduta!" />
-  <link rel="icon" type="image/png" sizes="64x64" href="./image/optimized/favicon.png?v=202611261541" />
+  <meta name="description" content="Diretrizes para uma comunidade acolhedora e inclusiva — Código de Conduta do CRUDPB." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="CRUDPB" />
+  <meta property="og:url" content="https://crudpb.org/codigoDeConduta.html" />
+  <meta property="og:title" content="Código de Conduta — CRUDPB" />
+  <meta property="og:description" content="Diretrizes para uma comunidade de devs acolhedora e inclusiva na Paraíba." />
+  <meta property="og:image" content="https://crudpb.org/image/logo.jpg" />
+
+  <link rel="icon" type="image/png" sizes="64x64" href="./image/optimized/favicon.png?v=202611261644" />
   <link rel="preload" href="font/Montserrat-Variable-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="font/SairaCondensed-Bold-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <title>Código de Conduta - CRUDPB</title>
-  <link rel="stylesheet" href="css/styles.css?v=202611261541" />
+  <title>Código de Conduta — CRUDPB</title>
+  <link rel="stylesheet" href="css/styles.css?v=202611261644" />
 </head>
 
 <body>
@@ -18,16 +28,25 @@
       <div class="container header-content">
         <div class="logo-container">
           <a href="index.html" class="logo-link" aria-label="CRUDPB - Página inicial">
-            <img src="./image/optimized/logo_transparente.webp" alt="CRUDPB logo" class="logo" width="50" height="50" decoding="async" fetchpriority="high" />
+            <img src="./image/optimized/logo_transparente.webp" alt="CRUDPB logo" class="logo" width="44" height="44" decoding="async" fetchpriority="high" />
+            <span class="logo-brand-text">CRUDPB</span>
           </a>
         </div>
-        <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
-          <span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        </button>
-        <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
-          <a href="index.html" class="nav-link">Home / Sobre</a>
-          <a href="codigoDeConduta.html" class="nav-link active">Código de Conduta</a>
-        </nav>
+
+        <div class="header-right">
+          <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+            <a href="index.html#sobre" class="nav-link">Sobre</a>
+            <a href="index.html#grupos" class="nav-link">Grupos</a>
+            <a href="index.html#lista" class="nav-link">Comunidades</a>
+            <a href="codigoDeConduta.html" class="nav-link active">Código de Conduta</a>
+          </nav>
+
+          <div class="header-controls">
+            <button type="button" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+              <span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <script>
@@ -42,6 +61,9 @@
         }
         btn.addEventListener('click', function () {
           setOpen(btn.getAttribute('aria-expanded') !== 'true');
+        });
+        nav.addEventListener('click', function (e) {
+          if (e.target.closest('a')) setOpen(false);
         });
         document.addEventListener('click', function (e) {
           if (nav.classList.contains('is-open') && !e.target.closest('.main-header')) setOpen(false);
@@ -62,9 +84,9 @@
         </div>
       </section>
 
-      <section class="about-section container" style="margin-top: -3rem;">
+      <section class="about-section container" style="margin-top: -3rem; margin-bottom: 3rem;">
         <div class="about-text">
-          <h2>Código de Conduta - CRUDPB</h2>
+          <h2 style="margin-bottom: 1rem; color: var(--primary-color);">Código de Conduta - CRUDPB</h2>
 
           <p>
             A Comunidade Reunida Unificada de Devs da Paraíba (CRUDPB) é um espaço
@@ -108,8 +130,8 @@
           </div>
 
           <div style="margin-top: 2rem; text-align: center;">
-            <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Agradecemos sua cooperação!</h3>
-            <p>
+            <h3 style="color: var(--primary-color); margin-bottom: 0.75rem;">Agradecemos sua cooperação!</h3>
+            <p style="color: var(--text-secondary);">
               Ao seguir este código de conduta, você está ajudando a construir uma
               comunidade mais forte e vibrante para todos.
             </p>

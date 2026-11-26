@@ -2,17 +2,32 @@
 <html lang="pt-br">
 
 <head>
-  <title>CRUDPB</title>
-  <meta name="description" content="Onde os devs da Paraíba se encontram!" />
+  <title>CRUDPB — Comunidade de Devs da Paraíba</title>
+  <meta name="description" content="Onde os devs da Paraíba se encontram! Conecte-se a 24+ comunidades de tecnologia, vagas, eventos e networking na Paraíba." />
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" sizes="64x64" href="./image/optimized/favicon.png?v=202611261541" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Open Graph / WhatsApp & Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="CRUDPB" />
+  <meta property="og:url" content="https://crudpb.org/" />
+  <meta property="og:title" content="CRUDPB — Comunidade de Devs da Paraíba" />
+  <meta property="og:description" content="Conecte-se a 24+ comunidades técnicas, grupos de vagas, eventos e desenvolvedores da Paraíba no WhatsApp." />
+  <meta property="og:image" content="https://crudpb.org/image/logo.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CRUDPB — Comunidade de Devs da Paraíba" />
+  <meta name="twitter:description" content="Onde os devs da Paraíba se encontram!" />
+  <meta name="twitter:image" content="https://crudpb.org/image/logo.jpg" />
+
+  <link rel="icon" type="image/png" sizes="64x64" href="./image/optimized/favicon.png?v=202611261644" />
   <link rel="preload" href="font/Montserrat-Variable-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="font/SairaCondensed-Bold-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="./data/communities.json?v=202611261541" as="fetch" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/styles.css?v=202611261541" />
-  <script src="./script.js?v=202611261541" defer></script>
+  <link rel="preload" href="./data/communities.json?v=202611261644" as="fetch" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css?v=202611261644" />
+  <script src="./script.js?v=202611261644" defer></script>
 </head>
 
 <body>
@@ -21,16 +36,25 @@
       <div class="container header-content">
         <div class="logo-container">
           <a href="index.html" class="logo-link" aria-label="CRUDPB - Página inicial">
-            <img src="./image/optimized/logo_transparente.webp" alt="CRUDPB logo" class="logo" width="50" height="50" decoding="async" fetchpriority="high" />
+            <img src="./image/optimized/logo_transparente.webp" alt="CRUDPB logo" class="logo" width="44" height="44" decoding="async" fetchpriority="high" />
+            <span class="logo-brand-text">CRUDPB</span>
           </a>
         </div>
-        <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
-          <span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-        </button>
-        <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
-          <a href="index.html" class="nav-link active">Home / Sobre</a>
-          <a href="codigoDeConduta.html" class="nav-link">Código de Conduta</a>
-        </nav>
+
+        <div class="header-right">
+          <nav id="mainNav" class="main-nav" aria-label="Navegação principal">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#grupos" class="nav-link">Grupos</a>
+            <a href="#lista" class="nav-link">Comunidades</a>
+            <a href="codigoDeConduta.html" class="nav-link">Código de Conduta</a>
+          </nav>
+
+          <div class="header-controls">
+            <button type="button" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+              <span class="menu-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
     <script>
@@ -46,6 +70,9 @@
         btn.addEventListener('click', function () {
           setOpen(btn.getAttribute('aria-expanded') !== 'true');
         });
+        nav.addEventListener('click', function (e) {
+          if (e.target.closest('a')) setOpen(false);
+        });
         document.addEventListener('click', function (e) {
           if (nav.classList.contains('is-open') && !e.target.closest('.main-header')) setOpen(false);
         });
@@ -60,7 +87,13 @@
         <div class="container">
           <div class="hero-content">
             <h1><b>CRUDPB</b> <span class="subtitle">Comunidade de Devs da Paraíba</span></h1>
-            <p class="hero-tagline">Unindo a comunidade de desenvolvedores da Paraíba.</p>
+            <p class="hero-tagline">Unindo a comunidade de desenvolvedores da Paraíba em um só ecossistema.</p>
+
+            <div class="hero-stats" aria-label="Números da comunidade">
+              <div class="hero-stat"><strong>24+</strong> <span>comunidades técnicas</span></div>
+              <div class="hero-stat"><strong>7</strong> <span>grupos centrais</span></div>
+              <div class="hero-stat"><strong>100%</strong> <span>aberto e gratuito</span></div>
+            </div>
 
             <div class="hero-actions">
               <div class="action-card">
@@ -72,7 +105,7 @@
               </div>
               <div class="action-card">
                 <h3>Para Recrutadores</h3>
-                <p>Encontre os melhores talentos da região.</p>
+                <p>Encontre os melhores talentos da região nos nossos grupos de vagas.</p>
                 <div class="button-group">
                   <a class="button secondary-btn" href="https://chat.whatsapp.com/JjyhzUmjC2qHjLhhKW5IHt"
                     target="_blank" rel="noopener noreferrer">Vagas #1</a>
@@ -83,7 +116,7 @@
             </div>
           </div>
 
-          <div class="carousel-container">
+          <div class="carousel-container" aria-label="Fotos de eventos da comunidade">
             <div class="carousel-track">
               <!-- Imagens Originais -->
               <img src="./image/optimized/carousel/jampa_ruby.webp" alt="Evento Jampa Ruby" width="300" height="180" decoding="async" fetchpriority="high" />
@@ -108,7 +141,7 @@
         </div>
       </section>
 
-      <section class="about-section container">
+      <section id="sobre" class="about-section container">
         <div class="about-text">
           <p>O <strong>CRUDPB</strong> (<i>Comunidade Reunida Unificada de Devs da Paraíba</i>) nasce com o objetivo de
             fortalecer a comunidade de tecnologia do estado. Unindo diversas comunidades técnicas em uma estrutura
@@ -140,9 +173,9 @@
         </div>
       </section>
 
-      <section class="important-groups-section container">
+      <section id="grupos" class="important-groups-section container">
         <h2>Grupos Essenciais</h2>
-        <p>Não deixe de entrar nestes 6 grupos principais:</p>
+        <p>Não deixe de entrar nestes 7 grupos principais:</p>
         <ul id="grupos_importantes" class="groups-grid">
           <li class="grupo-importante-item">
             <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" rel="noopener noreferrer" class="group-link">
@@ -151,6 +184,7 @@
                 <strong>#geral</strong>
                 <span>Comunicações diversas</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -161,6 +195,7 @@
                 <strong>#eventos</strong>
                 <span>Divulgação de eventos</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -171,6 +206,7 @@
                 <strong>#carreira-tech</strong>
                 <span>Discussões sobre carreira</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -180,6 +216,7 @@
                 <strong>#vagas (1)</strong>
                 <span>Oportunidades de emprego</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -189,6 +226,7 @@
                 <strong>#vagas (2)</strong>
                 <span>Mais oportunidades</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -199,6 +237,7 @@
                 <strong>#mercado</strong>
                 <span>Compra e venda</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
           <li class="grupo-importante-item">
@@ -209,6 +248,7 @@
                 <strong>#divulgaçãoDevLinks</strong>
                 <span>Compartilhando bons links de desenvolvimento</span>
               </div>
+              <svg class="icon group-chevron" viewBox="0 0 320 512" aria-hidden="true"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
             </a>
           </li>
         </ul>
@@ -219,9 +259,17 @@
           <h2>Comunidades: Encontre a sua!</h2>
           <div class="search-wrapper">
             <svg class="icon search-icon" viewBox="0 0 512 512" aria-hidden="true"><path d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-            <input type="text" id="searchInput" class="search-input"
-              placeholder="Pesquise por nome ou tecnologia (ex: java, ruby)...">
+            <input type="search" id="searchInput" class="search-input" aria-label="Pesquisar comunidades por nome ou tecnologia"
+              placeholder="Pesquise por nome ou tecnologia (ex: java, ia, cloud)...">
+            <button type="button" id="searchClear" class="search-clear" aria-label="Limpar pesquisa">&times;</button>
           </div>
+        </div>
+
+        <div id="categoryFilters" class="category-filters" role="group" aria-label="Filtrar por categoria"></div>
+
+        <div class="results-bar">
+          <span id="resultsCount" class="results-count" aria-live="polite"></span>
+          <button type="button" id="clearFiltersBtn" class="clear-filters-btn">Limpar filtros</button>
         </div>
 
         <!-- Alert for new members -->
@@ -232,8 +280,31 @@
         </div>
 
         <div id="listaPrincipal" class="cards-grid"></div>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <h3>Nenhuma comunidade encontrada</h3>
+          <p id="emptyStateText">Tente ajustar a busca ou limpar o filtro de categoria.</p>
+          <div class="empty-state-actions">
+            <button type="button" id="emptyResetBtn" class="empty-btn empty-btn-primary">Ver todas as comunidades</button>
+            <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" rel="noopener noreferrer" class="empty-btn">Sugerir no #geral</a>
+          </div>
+        </div>
+
+        <div class="suggest-banner">
+          <div>
+            <h3>Sua comunidade ainda não está listada?</h3>
+            <p>Quer conectar um grupo técnico da Paraíba ao ecossistema CRUDPB? Fale com a moderação no #geral!</p>
+          </div>
+          <a href="https://chat.whatsapp.com/DNKifJdh3lU6Dqg1vz95Vl" target="_blank" rel="noopener noreferrer" class="suggest-btn">
+            <svg class="icon" viewBox="0 0 448 512" aria-hidden="true"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Falar no #geral
+          </a>
+        </div>
       </section>
     </main>
+
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+      <svg class="icon" viewBox="0 0 384 512" aria-hidden="true"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+    </button>
 
     <footer class="main-footer">
       <div class="container footer-content">
